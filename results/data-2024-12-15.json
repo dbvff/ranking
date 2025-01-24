@@ -1,0 +1,534 @@
+{
+    "Moritz Fiebig": {
+        "total": 197,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "GTD'24 (1.pl; 80pts)",
+            "CF Semis '24 (10.pl; 77pts)",
+            "CF Games '24 (33.pl; 40pts)"
+        ],
+        "tiebreak": [
+            197,
+            80,
+            77,
+            40
+        ]
+    },
+    "Julia Jakobsen": {
+        "total": 165,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "iF3 Worlds '24 (4.pl; 75pts)",
+            "GTD'24 (5.pl; 48pts)",
+            "iF3 Euros '24 (2.pl; 42pts)",
+            "CF Semis '24 (32.pl; 22pts)",
+            "DBVfF DM'24 (1.pl; 20pts)"
+        ],
+        "tiebreak": [
+            165,
+            75,
+            48,
+            42
+        ]
+    },
+    "Lenn Postel": {
+        "total": 136,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "iF3 Worlds '24 (3.pl; 100pts)",
+            "Czech TD (1.pl; 20pts)",
+            "DBVfF DM'24 (2.pl; 16pts)",
+            "Amsterdam (2.pl; 13pts)"
+        ],
+        "tiebreak": [
+            136,
+            100,
+            20,
+            16
+        ]
+    },
+    "Leon Wagenknecht": {
+        "total": 114,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "CF Semis '24 MMFF (3.pl; 46pts)",
+            "CFG '24 MMFF (20.pl; 36pts)",
+            "Low'24 (7.pl; 32pts)"
+        ],
+        "tiebreak": [
+            114,
+            46,
+            36,
+            32
+        ]
+    },
+    "Tobias Fox": {
+        "total": 109,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "Low'24 (2.pl; 72pts)",
+            "Liege (1.pl; 20pts)",
+            "CF Semis '24 (34.pl; 17pts)"
+        ],
+        "tiebreak": [
+            109,
+            72,
+            20,
+            17
+        ]
+    },
+    "Nick Mentzel": {
+        "total": 109,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "Low'24 (5.pl; 48pts)",
+            "GTD'24 (5.pl; 48pts)",
+            "Lions '24 (2.pl; 13pts)"
+        ],
+        "tiebreak": [
+            109,
+            48,
+            48,
+            13
+        ]
+    },
+    "Jan Arnd Finkenberg": {
+        "total": 96,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "GTD'24 (4.pl; 56pts)",
+            "Bohemian TD (1.pl; 20pts)",
+            "Lions '24 (1.pl; 20pts)",
+            "BtB '24 MM (1.pl; 15pts)",
+            "Dubai '24 (15.pl; 10pts)"
+        ],
+        "tiebreak": [
+            96,
+            56,
+            20,
+            20
+        ]
+    },
+    "Felix Rehder": {
+        "total": 93,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "CF Semis '24 MMFF (5.pl; 43pts)",
+            "GTD'24 (6.pl; 40pts)",
+            "CFG '24 MMFF (28.pl; 10pts)"
+        ],
+        "tiebreak": [
+            93,
+            43,
+            40,
+            10
+        ]
+    },
+    "Benjamin Huxol": {
+        "total": 90,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "iF3 Euros '24 (2.pl; 42pts)",
+            "Marbella (5.pl; 36pts)",
+            "DBVfF DM'24 (3.pl; 12pts)"
+        ],
+        "tiebreak": [
+            90,
+            42,
+            36,
+            12
+        ]
+    },
+    "Caroline M\u00fcller-Korn": {
+        "total": 83,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "WZA'24 FFF (12.pl; 57pts)",
+            "Marbella (8.pl; 18pts)",
+            "DBVfF DM'24 (4.pl; 8pts)"
+        ],
+        "tiebreak": [
+            83,
+            57,
+            18,
+            8
+        ]
+    },
+    "Vivien-Marie Christian": {
+        "total": 81,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "iF3 Worlds '24 MMFF (3.pl; 50pts)",
+            "DBVfF DM'24 (2.pl; 16pts)",
+            "BtB '24 FF (1.pl; 15pts)",
+            "CF Semis '24 MMFF (23.pl; 13pts)"
+        ],
+        "tiebreak": [
+            81,
+            50,
+            16,
+            15
+        ]
+    },
+    "Sarah Antonia Ziemens": {
+        "total": 76,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "iF3 Worlds '24 MMFF (3.pl; 50pts)",
+            "Czech TD (2.pl; 13pts)",
+            "CF Semis '24 MMFF (23.pl; 13pts)"
+        ],
+        "tiebreak": [
+            76,
+            50,
+            13,
+            13
+        ]
+    },
+    "Karl Feldmer": {
+        "total": 71,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "iF3 Worlds '24 MMFF (3.pl; 50pts)",
+            "CF Semis '24 MMFF (23.pl; 13pts)",
+            "DBVfF DM'24 (4.pl; 8pts)",
+            "Czech TD (3.pl; 6pts)"
+        ],
+        "tiebreak": [
+            71,
+            50,
+            13,
+            8
+        ]
+    },
+    "Eric Zuchold": {
+        "total": 64,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Low'24 (3.pl; 64pts)"
+        ],
+        "tiebreak": [
+            64,
+            64,
+            0,
+            0
+        ]
+    },
+    "Noel Nagel": {
+        "total": 54,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "iF3 Worlds '24 MMFF (3.pl; 50pts)",
+            "DBVfF DM'24 (5.pl; 4pts)"
+        ],
+        "tiebreak": [
+            54,
+            50,
+            4,
+            0
+        ]
+    },
+    "Franziska H\u00f6ger": {
+        "total": 50,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "CF Semis '24 (21.pl; 50pts)"
+        ],
+        "tiebreak": [
+            50,
+            50,
+            0,
+            0
+        ]
+    },
+    "Lidia Barto": {
+        "total": 48,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "Liege (1.pl; 20pts)",
+            "GTD'24 (9.pl; 16pts)",
+            "DBVfF DM'24 (3.pl; 12pts)"
+        ],
+        "tiebreak": [
+            48,
+            20,
+            16,
+            12
+        ]
+    },
+    "Odo Federolf": {
+        "total": 45,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "CISM Euro'24 (1.pl; 30pts)",
+            "BtB '24 MM (1.pl; 15pts)"
+        ],
+        "tiebreak": [
+            45,
+            30,
+            15,
+            0
+        ]
+    },
+    "Julius Kieser": {
+        "total": 40,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "DBVfF DM'24 (1.pl; 20pts)",
+            "Swiss TD (1.pl; 20pts)"
+        ],
+        "tiebreak": [
+            40,
+            20,
+            20,
+            0
+        ]
+    },
+    "Jana Geertz": {
+        "total": 32,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "GTD'24 (7.pl; 32pts)"
+        ],
+        "tiebreak": [
+            32,
+            32,
+            0,
+            0
+        ]
+    },
+    "Susan Treppner": {
+        "total": 32,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "BtB '24 FF (1.pl; 15pts)",
+            "CF Semis '24 MMFF (24.pl; 11pts)",
+            "Amsterdam (3.pl; 6pts)"
+        ],
+        "tiebreak": [
+            32,
+            15,
+            11,
+            6
+        ]
+    },
+    "Diana Vetter": {
+        "total": 30,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "CISM Euro'24 (1.pl; 30pts)"
+        ],
+        "tiebreak": [
+            30,
+            30,
+            0,
+            0
+        ]
+    },
+    "Verena Evelyn Reimers": {
+        "total": 22,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "WZA'24 FFF (25.pl; 18pts)",
+            "DBVfF DM'24 (5.pl; 4pts)"
+        ],
+        "tiebreak": [
+            22,
+            18,
+            4,
+            0
+        ]
+    },
+    "Klaudia Dabrowska": {
+        "total": 20,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Lions '24 (1.pl; 20pts)"
+        ],
+        "tiebreak": [
+            20,
+            20,
+            0,
+            0
+        ]
+    },
+    "Christoph Verrieth": {
+        "total": 16,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "GTD'24 (9.pl; 16pts)"
+        ],
+        "tiebreak": [
+            16,
+            16,
+            0,
+            0
+        ]
+    },
+    "Anna Hartje": {
+        "total": 16,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "CISM Euro'24 (3.pl; 10pts)",
+            "Lions '24 (3.pl; 6pts)"
+        ],
+        "tiebreak": [
+            16,
+            10,
+            6,
+            0
+        ]
+    },
+    "Oskar G\u00fcnther": {
+        "total": 15,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "BtB '24 MF (1.pl; 15pts)"
+        ],
+        "tiebreak": [
+            15,
+            15,
+            0,
+            0
+        ]
+    },
+    "Judith Melcher": {
+        "total": 15,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "BtB '24 MF (1.pl; 15pts)"
+        ],
+        "tiebreak": [
+            15,
+            15,
+            0,
+            0
+        ]
+    },
+    "Pia Zeller": {
+        "total": 13,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Lions '24 (2.pl; 13pts)"
+        ],
+        "tiebreak": [
+            13,
+            13,
+            0,
+            0
+        ]
+    },
+    "Daniel Goncharov": {
+        "total": 13,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "CF Semis '24 MMFF (23.pl; 13pts)"
+        ],
+        "tiebreak": [
+            13,
+            13,
+            0,
+            0
+        ]
+    },
+    "Lars Jakobeit": {
+        "total": 11,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "CF Semis '24 MMFF (24.pl; 11pts)"
+        ],
+        "tiebreak": [
+            11,
+            11,
+            0,
+            0
+        ]
+    },
+    "Hendrik Senf": {
+        "total": 11,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "CF Semis '24 MMFF (24.pl; 11pts)"
+        ],
+        "tiebreak": [
+            11,
+            11,
+            0,
+            0
+        ]
+    },
+    "Jona Kemmann": {
+        "total": 6,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Lions '24 (3.pl; 6pts)"
+        ],
+        "tiebreak": [
+            6,
+            6,
+            0,
+            0
+        ]
+    },
+    "Max Hinkofer": {
+        "total": 6,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Swiss TD (3.pl; 6pts)"
+        ],
+        "tiebreak": [
+            6,
+            6,
+            0,
+            0
+        ]
+    },
+    "Katharina Isele": {
+        "total": 5,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "CF Semis '24 (39.pl; 5pts)"
+        ],
+        "tiebreak": [
+            5,
+            5,
+            0,
+            0
+        ]
+    }
+}
