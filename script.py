@@ -6,8 +6,11 @@ import glob
 
 # variables
 now = datetime.today().strftime('%Y-%m-%d')
-now = "2024-12-15"
+now = "2025-01-27"
 
+# settings
+prev, curr = "2024-12-15", now
+# prev, curr = "2024-12-15", "2025-01-27"
 
 
 # ----------------------------------------------------------------------------
@@ -26,10 +29,13 @@ data = []
 # ]
 
 
+# UAE Storm Games
+# no indy participants in the top-5
 
-# Indy: Wodapalooza '24
-meta = {"comp": "WZA '24", "D": 150, "C": 15}
-# no indy participants
+
+# Indy: Wodapalooza '25
+meta = {"comp": "WZA '25", "D": 150, "C": 15}
+# no indy participants in the top-15
 
 
 # Indy: iF3 Euros, final day,
@@ -218,11 +224,10 @@ data = data + [
 
 
 # Teams: Wodapalooza, Team of 3
-# https://competitioncorner.net/ff/10738/results#team_67050
-meta = {"comp": "WZA'24 FFF", "D": 90, "C": 30}
+# https://competitioncorner.net/ff/15169/results#team_96480
+meta = {"comp": "WZA'25 MMM", "D": 90, "C": 30}
 data = data + [
-    {"name": "Caroline Müller-Korn", "gender": "f", "place": 12, **meta},
-    {"name": "Verena Evelyn Reimers", "gender": "f", "place": 25, **meta},
+    {"name": "Moritz Fiebig", "gender": "m", "place": 10, **meta},
 ]
 
 
@@ -366,5 +371,33 @@ for gender in ("m", "f"):
     tmp["rank"] = get_rank(tmp)
     tmp = tmp.rename_axis("name").reset_index()
     tmp = tmp[["name", "rank", "total", "comps", "details"]]
-    tmp.to_csv(f"results/{gender}-{now}.csv", index=False)
-    tmp.to_json(f"results/{gender}-{now}.json", orient="records")
+    tmp.to_csv(f"results/{gender}-{curr}.csv", index=False)
+    tmp.to_json(f"results/{gender}-{curr}.json", orient="records")
+
+
+# ----------------------------------------------------------------------------
+# Save Ranking Changes to CSV
+
+
+# search for the previous date
+if prev is None:
+    FILES = glob.glob(f"results/f-*.xlsx")
+    FILES.sort()
+    if len(FILES) > 0:
+        prev = FILES[-2].split("f-")[-1].split(".xlsx")[0]
+
+print(prev, curr)
+
+# compute the differences
+for gender in ("f", "m"):
+    df_prev = pd.read_csv(f"results/{gender}-{prev}.csv", index_col=0)
+    df_curr = pd.read_csv(f"results/{gender}-{curr}.csv", index_col=0)
+
+    df_tmp = df_curr.join(df_prev, how="left", rsuffix="_prev")
+    df_tmp["rank_diff"] = df_tmp["rank_prev"] - df_tmp["rank"]
+    df_tmp["total_diff"] = df_tmp["total"] - df_tmp["total_prev"]
+    df_tmp = df_tmp.rename_axis("name").reset_index()
+    df_tmp = df_tmp[["name", "rank", "total", "rank_diff", "total_diff", "comps", "details"]]
+    df_tmp.to_csv(f"results/{gender}c-{curr}.csv", index=False)
+    df_tmp.to_json(f"results/{gender}c-{curr}.json", orient="records")
+
