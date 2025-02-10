@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Repeatable Test of Fitness | Bodyweight-Test Score Calculator
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://dbvff.de/">
+                <img src="https://dbvff.de/wp-content/uploads/2020/08/cropped-DBVfF_Logo-1.png">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" onClick="toogleWomen();">
+                    Women
+                </a>
+
+                <a class="navbar-item"  onClick="toogleMen();">
+                    Men
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Info
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" target="_blank" href="https://dbvff.de/wp-content/uploads/2024/12/Ranking-Method-2024-12-15.pdf">
+                            Methodology
+                        </a>
+                        <a class="navbar-item" target="_blank" href="https://dbvff.de/kontakt/">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="section">
+
+        <div class="container">
+
+          <h1 class="title" id="title"></h1>
+          <!-- <p class="subtitle"></p> -->
+          
+          <div class="dropdown" onClick="toogleDropdown()" id="date-dropdown">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span id="date-dropdown-selected">Date</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="date-dropdown-menu" role="menu">
+              <div class="dropdown-content" id="date-dropdown-content">
+                <a href="#" class="dropdown-item"> Dropdown item </a>
+                <a class="dropdown-item"> Other dropdown item </a>
+                <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+                <a href="#" class="dropdown-item"> Other dropdown item </a>
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item"> With a divider </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="button" onClick="toogleGender();" id="button-toogle-gender"></div>
+          
+          <table id="ranking-table"></table>
+
+          
+          <h2 class="subtitle">Changes</h2>
+          <div class="block info" id="change-notes"></div>
+
+          <h2 class="subtitle">Last competitions</h2>
+          <p class="block info" id="change-comps"></p>
+
+
+        </div>
+    </section>
+
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+            });
+        });
+    });
+</script>
+
+
+<script>
+// date
+// var selectedDate = "2025-01-27";
+var selectedDate = undefined;
+var dbTexts = undefined;
+
+const loadChanges = () => {
+    const urlStr = `https://raw.githubusercontent.com/dbvff/ranking/refs/heads/main/changes.json`; 
+    fetch(urlStr)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => {
+        dbTexts = data;
+        createDropdown(Object.keys(data))
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
+}
+loadChanges();
+
+
+const createDropdown = (changeDates) => {
+    changeDates.sort().reverse();
+    // on initial load
+    if (typeof selectedDate == "undefined"){
+        setDate(changeDates[0]);
+    }
+    // fill dropdown with dates
+    var div = document.getElementById("date-dropdown-content");
+    div.replaceChildren();
+    changeDates.forEach( (dt) => {
+        item = document.createElement('span');
+        item.appendChild(document.createTextNode(dt));
+        item.classList.add("dropdown-item");
+        // item.onclick = setDate(dt);
+        item.addEventListener('click', function(){ setDate(dt);}, false);
+        div.appendChild(item);
+    });
+}
+const setDate = (dt) => {
+    selectedDate = dt;
+    reloadData(); // reload the ranking table
+    reloadTexts(dt);
+    reloadComps(dt);
+}
+
+const reloadTexts = (dt) => {
+    // add texts
+    var elem = document.getElementById("change-notes");
+    elem.replaceChildren();
+    var ul = document.createElement("ul");
+    ul.classList.add("list");
+    dbTexts[dt]["en"].forEach((line) => {
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(line));
+        li.classList.add("list-item");
+        ul.appendChild(li);
+    });
+    elem.appendChild(ul);
+}
+const reloadComps = (dt) => {
+    // add texts
+    var elem = document.getElementById("change-comps");
+    elem.replaceChildren();
+    var ul = document.createElement("ul");
+    ul.classList.add("list");
+    dbTexts[dt]["updated"].forEach((line) => {
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(line));
+        li.classList.add("list-item");
+        ul.appendChild(li);
+    });
+    elem.appendChild(ul);
+}
+
+
+var stateDropdown = false;
+const toogleDropdown = () => {
+    var div = document.getElementById("date-dropdown");
+    if(stateDropdown){
+        div.classList.remove("is-active");
+        stateDropdown = false;
+    }else{
+        div.classList.add("is-active");
+        stateDropdown = true;
+    }
+}
+
+
+// gender
+var selectedGender = "f";
+const toogleWomen = () => {
+    selectedGender = "f"; 
+    reloadData();
+    var elem = document.getElementById("title"); elem.innerHTML = "Women";
+    var btn = document.getElementById("button-toogle-gender"); btn.innerHTML = "Men";
+}
+const toogleMen = () => {
+    selectedGender = "m"; 
+    reloadData();
+    var elem = document.getElementById("title"); elem.innerHTML = "Men";
+    var btn = document.getElementById("button-toogle-gender"); btn.innerHTML = "Women";
+}
+const toogleGender = () => {
+    if (selectedGender == "f"){
+        toogleMen();
+    }else{
+        toogleWomen();
+    }
+}
+
+
+// reload data
+const reloadData = () => {
+    console.log(selectedDate)
+    if (typeof selectedDate == "undefined"){
+        return;
+    }
+    if (typeof selectedGender == "undefined"){
+        return;
+    }
+    // console.log(selectedGender, selectedDate)
+    const urlStr = `https://raw.githubusercontent.com/dbvff/ranking/refs/heads/main/results/${selectedGender}c-${selectedDate}.json`; 
+    fetch(urlStr)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => {
+        createTable(data);
+        console.log(data)
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
+}
+
+const createTable = (tableData) => {
+    // var table = document.createElement('table');
+    var table = document.getElementById("ranking-table");
+    table.replaceChildren(); // reset HTML table
+    table.classList.add("table");
+
+    // table header cells
+    var tableHead = document.createElement('thead');
+    var row = document.createElement('tr');
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode("rank"));
+    row.appendChild(cell);
+
+    cell = document.createElement('td');
+    row.appendChild(cell);
+
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode("name"));
+    row.appendChild(cell);
+
+    cell = document.createElement('td');
+    cell.appendChild(document.createTextNode("pts"));
+    row.appendChild(cell);
+
+    cell = document.createElement('td');
+    row.appendChild(cell);
+    tableHead.appendChild(row);
+    table.appendChild(tableHead);
+    
+
+    // add athletes as table rows
+    var tableBody = document.createElement('tbody');
+    tableData.forEach((rowData) => {
+        var row = document.createElement('tr');
+
+        var cell = undefined;
+
+        cell = document.createElement('td');
+        cell.appendChild(document.createTextNode(rowData['rank']));
+        row.appendChild(cell);
+
+        cell = document.createElement('td');
+        if( rowData['rank_diff'] > 0){
+            cell.appendChild(document.createTextNode(`▲+${rowData['rank_diff']}`));
+            cell.style.color = 'green';
+        }else if( rowData['rank_diff'] < 0){
+            cell.appendChild(document.createTextNode(`▼${rowData['rank_diff']}`));
+            cell.style.color = 'red';
+        }else{
+            cell.appendChild(document.createTextNode(`-`));
+        }
+        // cell.appendChild(document.createTextNode(rowData['rank_diff']));
+        row.appendChild(cell);
+
+        cell = document.createElement('td');
+        cell.appendChild(document.createTextNode(rowData['name']));
+        row.appendChild(cell);
+
+        cell = document.createElement('td');
+        cell.appendChild(document.createTextNode(rowData['total']));
+        row.appendChild(cell);
+
+        cell = document.createElement('td');
+        if( rowData['total_diff'] != 0){
+            cell.appendChild(document.createTextNode(rowData['total_diff']));
+        }
+        row.appendChild(cell);
+
+        tableBody.appendChild(row);
+    });
+    table.appendChild(tableBody);
+    // document.body.appendChild(table);
+}
+
+
+// load initial table
+toogleWomen();
+
+
+</script>
+
+</html>
