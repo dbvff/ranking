@@ -55,6 +55,8 @@
         </div>
     </nav>
 
+
+
     <section class="section">
 
         <div class="container">
@@ -94,12 +96,32 @@
           <h2 class="subtitle">Last competitions</h2>
           <p class="block info" id="change-comps"></p>
 
-
         </div>
     </section>
 
 
+    <div class="modal" id="modal-athlete-details">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title" id="athlete-name"></p>
+                <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body" id="athlete-data">
+                <table id="athlete-comp-table"></table>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="buttons">
+                    <button class="button">Close</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
 </body>
+
+
+
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -121,8 +143,7 @@
 
 
 <script>
-// date
-// var selectedDate = "2025-01-27";
+// changes.json
 var selectedDate = undefined;
 var dbTexts = undefined;
 
@@ -213,8 +234,10 @@ const toogleDropdown = () => {
         stateDropdown = true;
     }
 }
+</script>
 
 
+<script>
 // gender
 var selectedGender = "f";
 const toogleWomen = () => {
@@ -237,10 +260,13 @@ const toogleGender = () => {
     }
 }
 
+</script>
 
-// reload data
+
+<script>
+// reload a specific ranking table given data and gender
 const reloadData = () => {
-    console.log(selectedDate)
+    // console.log(selectedDate)
     if (typeof selectedDate == "undefined"){
         return;
     }
@@ -258,12 +284,13 @@ const reloadData = () => {
     })
     .then(data => {
         createTable(data);
-        console.log(data)
+        // console.log(data)
     })
     .catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
     });
 }
+
 
 const createTable = (tableData) => {
     // var table = document.createElement('table');
@@ -320,7 +347,13 @@ const createTable = (tableData) => {
         row.appendChild(cell);
 
         cell = document.createElement('td');
-        cell.appendChild(document.createTextNode(rowData['name']));
+        // cell.appendChild(document.createTextNode(rowData['name']));
+        var link = document.createElement("button");
+        link.classList.add("js-modal-trigger");
+        link.setAttribute("data-target", "modal-athlete-details");
+        link.setAttribute("id", convertToKey(rowData['name']));
+        link.innerHTML = rowData['name'];
+        cell.appendChild(link);
         row.appendChild(cell);
 
         cell = document.createElement('td');
@@ -337,13 +370,149 @@ const createTable = (tableData) => {
     });
     table.appendChild(tableBody);
     // document.body.appendChild(table);
+
+    connectModals();
 }
 
 
 // load initial table
 toogleWomen();
-
-
 </script>
+
+
+
+<script>
+var athleteDetails = {};
+
+const loadAthleteDetails = () => {
+    // console.log(selectedDate)
+    if (typeof selectedDate == "undefined"){
+        return;
+    }
+    // console.log(selectedGender, selectedDate)
+    const urlStr = `https://raw.githubusercontent.com/dbvff/ranking/refs/heads/main/results/data-${selectedDate}.json`; 
+    // console.log(urlStr)
+    fetch(urlStr)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => {
+        Object.keys(data).forEach((key) => {
+            athleteDetails[convertToKey(key)] = {"name": key, ...data[key]};
+        })
+        // console.log(athleteDetails)
+    })
+    .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
+}
+
+const convertToKey = (str) => {
+    return str.replace(/\s+/g, '-').toLowerCase()
+}
+
+const lookupAthleteDetail = (athlete_key) => {
+    return athleteDetails[athlete_key];
+}
+
+const createCompsTable = (tableData) => {
+    var table = document.getElementById("athlete-comp-table");
+    table.replaceChildren(); // reset HTML table
+    table.classList.add("table");
+
+    // table header cells
+    var tableHead = document.createElement('thead');
+    var row = document.createElement('tr');
+    var cell = undefined;
+    ["rank pts", "comp. place", "competition name", "D", "C"].forEach((name) => {
+        console.log(name)
+        cell = document.createElement('td');
+        cell.appendChild(document.createTextNode(name));
+        row.appendChild(cell);
+    });
+    tableHead.append(row)
+    table.appendChild(tableHead);
+
+    // add athletes as table rows
+    var tableBody = document.createElement('tbody');
+    tableData.forEach((rowData) => {
+        var row = document.createElement('tr');
+        var cell = undefined;
+        ["points", "place", "comp", "D", "C"].forEach((key) => {
+            cell = document.createElement('td');
+            cell.appendChild(document.createTextNode(rowData[key]));
+            row.appendChild(cell);
+        })
+        tableBody.appendChild(row);
+    });
+    table.appendChild(tableBody);
+}
+
+// document.addEventListener('DOMContentLoaded', () => {
+const connectModals = () => {
+  // load data for modals
+  loadAthleteDetails();
+
+  // Functions to open and close a modal
+  function openModal($el, athlete_key) {
+    $el.classList.add('is-active');
+    // load athlete data
+    var dat = lookupAthleteDetail(athlete_key);
+    // set name
+    var elem1 = document.getElementById("athlete-name");
+    elem1.replaceChildren();
+    elem1.innerHTML = dat["name"];
+    // show comps
+    createCompsTable(dat["details2"]);
+    // console.log($el, athlete_key, lookupAthleteDetail(athlete_key), dat["details2"])
+  }
+
+  function closeModal($el) {
+    $el.classList.remove('is-active');
+  }
+
+  function closeAllModals() {
+    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+      closeModal($modal);
+    });
+  }
+
+  // var tmp = document.querySelectorAll('.js-modal-trigger');
+  // console.log(tmp);
+
+  // Add a click event on buttons to open a specific modal
+  (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+    const modal = $trigger.dataset.target;
+    const $target = document.getElementById(modal);
+    // console.log("hey", $trigger.id, $target)
+
+    $trigger.addEventListener('click', () => {
+      openModal($target, $trigger.id);
+    });
+  });
+
+  // Add a click event on various child elements to close the parent modal
+  (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+    const $target = $close.closest('.modal');
+
+    $close.addEventListener('click', () => {
+      closeModal($target);
+    });
+  });
+
+  // Add a keyboard event to close all modals
+  document.addEventListener('keydown', (event) => {
+    if(event.key === "Escape") {
+      closeAllModals();
+    }
+  });
+// });
+}
+</script>
+
+
 
 </html>
