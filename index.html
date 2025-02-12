@@ -108,7 +108,10 @@
                 <button class="delete" aria-label="close"></button>
             </header>
             <section class="modal-card-body" id="athlete-data">
-                <table id="athlete-comp-table"></table>
+                <h2 class="subtitle" id="athlete-comp-title-n3"></h2>
+                <table id="athlete-comp-table-n3">Top-3 results</table>
+                <h2 class="subtitle" id="athlete-comp-title-other"></h2>
+                <table id="athlete-comp-table-other">Other results</table>
             </section>
             <footer class="modal-card-foot">
                 <div class="buttons">
@@ -317,7 +320,6 @@ const createTable = (tableData) => {
         var row = document.createElement('tr');
 
         // var cell = undefined;
-
         cell = document.createElement('td');
         cell.appendChild(document.createTextNode(rowData['rank']));
         row.appendChild(cell);
@@ -407,8 +409,17 @@ const lookupAthleteDetail = (athlete_key) => {
     return athleteDetails[athlete_key];
 }
 
-const createCompsTable = (tableData) => {
-    var table = document.getElementById("athlete-comp-table");
+const createCompsTable = (tableData, top3) => {
+    var table = undefined;
+    var header = undefined;
+    if(top3){
+        table = document.getElementById("athlete-comp-table-n3");
+        // header = document.getElementById("athlete-comp-title-n3");
+    }else{
+        console.log(tableData)
+        table = document.getElementById("athlete-comp-table-other");
+        // header = document.getElementById("athlete-comp-title-other");
+    }
     table.replaceChildren(); // reset HTML table
     table.classList.add("table");
     table.classList.add("has-text-centered");
@@ -418,7 +429,6 @@ const createCompsTable = (tableData) => {
     var row = document.createElement('tr');
     var cell = undefined;
     ["rank pts", "comp. place", "competition name", "D", "C"].forEach((name) => {
-        // console.log(name)
         cell = document.createElement('td');
         cell.appendChild(document.createTextNode(name));
         row.appendChild(cell);
@@ -456,7 +466,12 @@ const connectModals = () => {
     elem1.replaceChildren();
     elem1.innerHTML = dat["name"];
     // show comps
-    createCompsTable(dat["details2"]);
+    if(dat["details2"].length > 0){
+        createCompsTable(dat["details2"].slice(0, 3), true);
+    }
+    if (dat["details2"].length > 3){
+        createCompsTable(dat["details2"].slice(3), false);
+    }
     // console.log($el, athlete_key, lookupAthleteDetail(athlete_key), dat["details2"])
   }
 
