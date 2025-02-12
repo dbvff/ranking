@@ -471,7 +471,6 @@ const connectModals = () => {
     if (dat["details2"].length > 3){
         createCompsTable(dat["details2"].slice(3), false);
     }else{
-        console.log("Hey")
         var table3 = document.getElementById("athlete-comp-table-other");
         table3.replaceChildren();
         table3.innerHTML = "n.a.";
