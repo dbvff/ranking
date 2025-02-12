@@ -297,37 +297,26 @@ const createTable = (tableData) => {
     var table = document.getElementById("ranking-table");
     table.replaceChildren(); // reset HTML table
     table.classList.add("table");
+    table.classList.add("has-text-centered");
 
     // table header cells
     var tableHead = document.createElement('thead');
     var row = document.createElement('tr');
-    cell = document.createElement('td');
-    cell.appendChild(document.createTextNode("rank"));
-    row.appendChild(cell);
-
-    cell = document.createElement('td');
-    row.appendChild(cell);
-
-    cell = document.createElement('td');
-    cell.appendChild(document.createTextNode("name"));
-    row.appendChild(cell);
-
-    cell = document.createElement('td');
-    cell.appendChild(document.createTextNode("pts"));
-    row.appendChild(cell);
-
-    cell = document.createElement('td');
-    row.appendChild(cell);
+    var cell = undefined;
+    ["rank", "", "name", "pts", ""].forEach((key) => {
+        cell = document.createElement('td');
+        cell.appendChild(document.createTextNode(key));
+        row.appendChild(cell);
+    })
     tableHead.appendChild(row);
     table.appendChild(tableHead);
-    
 
     // add athletes as table rows
     var tableBody = document.createElement('tbody');
     tableData.forEach((rowData) => {
         var row = document.createElement('tr');
 
-        var cell = undefined;
+        // var cell = undefined;
 
         cell = document.createElement('td');
         cell.appendChild(document.createTextNode(rowData['rank']));
@@ -422,13 +411,14 @@ const createCompsTable = (tableData) => {
     var table = document.getElementById("athlete-comp-table");
     table.replaceChildren(); // reset HTML table
     table.classList.add("table");
+    table.classList.add("has-text-centered");
 
     // table header cells
     var tableHead = document.createElement('thead');
     var row = document.createElement('tr');
     var cell = undefined;
     ["rank pts", "comp. place", "competition name", "D", "C"].forEach((name) => {
-        console.log(name)
+        // console.log(name)
         cell = document.createElement('td');
         cell.appendChild(document.createTextNode(name));
         row.appendChild(cell);
