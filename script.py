@@ -323,7 +323,7 @@ tab = {}
 for item in data:
     if item["name"] not in tab:
         tab[item["name"]] = {
-            "total": 0, "comps": 0, "gender": item["gender"], "details": [],
+            "total": 0, "comps": 0, "gender": item["gender"], "details": [], "details2": [],
             "tiebreak": [0]*N
         }
     if len(tab[item["name"]]["details"]) < N:
@@ -333,6 +333,8 @@ for item in data:
         tab[item["name"]]["comps"] += 1
     s = f"{item['comp']} ({item['place']}.pl; {item['points']}pts)"
     tab[item["name"]]["details"].append(s)
+    d = {k: v for k, v in item.items() if k in ("D", "C", "place", "comp", "points")}
+    tab[item["name"]]["details2"].append(d)
 
 # sorting: add total to sorting criteria
 for key, val in tab.items():
