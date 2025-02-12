@@ -414,11 +414,8 @@ const createCompsTable = (tableData, top3) => {
     var header = undefined;
     if(top3){
         table = document.getElementById("athlete-comp-table-n3");
-        // header = document.getElementById("athlete-comp-title-n3");
     }else{
-        console.log(tableData)
         table = document.getElementById("athlete-comp-table-other");
-        // header = document.getElementById("athlete-comp-title-other");
     }
     table.replaceChildren(); // reset HTML table
     table.classList.add("table");
@@ -466,11 +463,18 @@ const connectModals = () => {
     elem1.replaceChildren();
     elem1.innerHTML = dat["name"];
     // show comps
+    var table2 = document.getElementById("athlete-comp-table-n3");
+    table2.replaceChildren();
     if(dat["details2"].length > 0){
         createCompsTable(dat["details2"].slice(0, 3), true);
     }
     if (dat["details2"].length > 3){
         createCompsTable(dat["details2"].slice(3), false);
+    }else{
+        console.log("Hey")
+        var table3 = document.getElementById("athlete-comp-table-other");
+        table3.replaceChildren();
+        table3.innerHTML = "n.a.";
     }
     // console.log($el, athlete_key, lookupAthleteDetail(athlete_key), dat["details2"])
   }
