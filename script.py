@@ -6,7 +6,7 @@ import glob
 
 # variables
 now = datetime.today().strftime('%Y-%m-%d')
-now = "2024-02-18"
+now = "2025-02-18"
 
 # settings
 prev, curr = "2025-01-27", now
