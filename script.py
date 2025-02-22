@@ -230,7 +230,7 @@ data = data + [
 
 # Teams: Wodapalooza, Team of 3
 # https://competitioncorner.net/ff/15169/results#team_96480
-meta = {"comp": "WZA'25 MMM", "D": 90, "C": 30}
+meta = {"comp": "WZA'25 MMM", "D": 90, "C": 30, "team": 3}
 data = data + [
     {"name": "Moritz Fiebig", "gender": "m", "place": 10, **meta},
 ]
@@ -238,7 +238,7 @@ data = data + [
 
 # Teams: CrossFit Semifinals, Team of 4
 # https://games.crossfit.com/leaderboard/semifinals/2024?semifinal=237&division=11&sort=0
-meta = {"comp": "CF Semis '24 MMFF", "D": 50, "C": 30}
+meta = {"comp": "CF Semis '24 MMFF", "D": 50, "C": 30, "team": 4}
 data = data + [
     {"name": "Daniel Goncharov", "gender": "m", "place": 23, **meta}, # Wysh
     {"name": "Karl Feldmer", "gender": "m", "place": 23, **meta}, # Wysh
@@ -252,7 +252,7 @@ data = data + [
 ]
 
 # Teams: CrossFit Games, Team of 4
-meta = {"comp": "CFG '24 MMFF", "D": 100, "C": 30}
+meta = {"comp": "CFG '24 MMFF", "D": 100, "C": 30, "team": 4}
 data = data + [
     {"name": "Leon Wagenknecht", "gender": "m", "place": 20, **meta}, # Oslo Kriger PSL
     {"name": "Felix Rehder", "gender": "m", "place": 28, **meta}, # Bucher's Lab
@@ -261,17 +261,17 @@ data = data + [
 
 # Teams: Battle the Beach, MM, FF, MF
 # https://portal.circle21.app/event?competitionId=1e0b79ee-b731-4b7b-9183-25003a43ccda
-meta = {"comp": "BtB '24 MM", "D": 15, "C": 1}
+meta = {"comp": "BtB '24 MM", "D": 15, "C": 1, "team": 2}
 data = data + [
     {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
     {"name": "Odo Federolf", "gender": "m", "place": 1, **meta},
 ]
-meta = {"comp": "BtB '24 FF", "D": 15, "C": 1}
+meta = {"comp": "BtB '24 FF", "D": 15, "C": 1, "team": 2}
 data = data + [
     {"name": "Vivien-Marie Christian", "gender": "f", "place": 1, **meta},
     {"name": "Susan Treppner", "gender": "f", "place": 1, **meta},
 ]
-meta = {"comp": "BtB '24 MF", "D": 15, "C": 1}
+meta = {"comp": "BtB '24 MF", "D": 15, "C": 1, "team": 2}
 data = data + [
     {"name": "Oskar Günther", "gender": "m", "place": 1, **meta},
     {"name": "Judith Melcher", "gender": "f", "place": 1, **meta},
@@ -280,13 +280,13 @@ data = data + [
 
 # Teams: Double Trouble, MF
 # https://portal.circle21.app/event?competitionId=09edff51-5283-4076-a07a-a5f3ea98ff63
-meta = {"comp": "DT '24 MF", "D": 15, "C": 1}
+meta = {"comp": "DT '24 MF", "D": 15, "C": 1, "team": 2}
 # no top-1
 
 
 # Teams: iF3 Worlds, Team of 4, final day
 # https://portal.circle21.app/event?competitionId=beb79dfb-7d92-4bce-ad4a-06b17e17873c
-meta = {"comp": "iF3 Worlds '24 MMFF", "D": 75, "C": 6}
+meta = {"comp": "iF3 Worlds '24 MMFF", "D": 75, "C": 6, "team": 4}
 data = data + [
     {"name": "Noel Nagel", "gender": "m", "place": 3, **meta},
     {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
@@ -317,11 +317,24 @@ for item in data:
 # ----------------------------------------------------------------------------
 # Sum best 3 competitions scores
 
+# limit to N=3 competitions
+N=3
+
+# limit number of team scores
+M=2
+
 # sort all entries by largest points
 data = sorted(data, key=lambda x: -x.get('points'))
 
-# limit to N=3 competitions
-N=3
+# set team points to zero
+namecnt = {}
+for i in range(len(data)):
+    if data[i].get("team") is not None:
+        if namecnt.get(data[i]["name"], 0) >= M:  # reset pts=0
+            data[i]["points"] = 0
+        namecnt[data[i]["name"]] = 1 + namecnt.get(data[i]["name"], 0)
+data = sorted(data, key=lambda x: -x.get('points'))
+
 
 # aggregate per athlete
 tab = {}
