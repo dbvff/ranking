@@ -6,11 +6,10 @@ import glob
 
 # variables
 now = datetime.today().strftime('%Y-%m-%d')
-now = "2025-01-27"
+now = "2024-02-18"
 
 # settings
-prev, curr = "2024-12-15", now
-# prev, curr = "2024-12-15", "2025-01-27"
+prev, curr = "2025-01-27", now
 
 
 # ----------------------------------------------------------------------------
@@ -37,6 +36,12 @@ data = []
 meta = {"comp": "WZA '25", "D": 150, "C": 15}
 # no indy participants in the top-15
 
+# Indy: Picsil Showdown
+# https://arena.wodbuster.com/competition.aspx?id=2551
+meta = {"comp": "Picsil'25", "D": 20 + 40, "C": 5}
+data = data + [
+    {"name": "Moritz Fiebig", "gender": "m", "place": 3, **meta},
+]
 
 # Indy: iF3 Euros, final day,
 # https://scoring.fit/1893/leaderboard
