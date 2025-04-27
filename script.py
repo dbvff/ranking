@@ -6,10 +6,10 @@ import glob
 
 # variables
 now = datetime.today().strftime('%Y-%m-%d')
-now = "2025-02-18"
+now = "2025-05-12"
 
 # settings
-prev, curr = "2025-01-27", now
+prev, curr = "2025-02-18", now
 
 
 # ----------------------------------------------------------------------------
@@ -67,6 +67,25 @@ data = data + [
 ]
 
 
+# French TD
+# https://competitioncorner.net/ff/16541/results/details
+# meta = {"comp": "French TD", "D": 100 + 20, "C": 40}
+# data = data + [
+#     {"name": "", "gender": "m", "place": 1, **meta},
+#     {"name": "", "gender": "m", "place": 2, **meta},
+#     {"name": "", "gender": "m", "place": 3, **meta},
+#     {"name": "", "gender": "f", "place": 1, **meta},
+#     {"name": "", "gender": "f", "place": 2, **meta},
+#     {"name": "", "gender": "f", "place": 3, **meta},
+# ]
+
+
+# WFP Tour Event 1
+# https://competitioncorner.net/ff/16060/results
+# meta = {"comp": "WFP 1", "D": 150, "C": 30}
+
+
+
 # Indy: iF3 Euros, final day,
 # https://scoring.fit/1893/leaderboard
 meta = {"comp": "iF3 Euros '24", "D": 100-50, "C": 7}
@@ -74,18 +93,6 @@ data = data + [
     {"name": "Julia Jakobsen", "gender": "f", "place": 2, **meta},
     {"name": "Benjamin Huxol", "gender": "m", "place": 2, **meta},
 ]
-
-
-# Indy: CrossFit Semifinals (French TD),
-# https://games.crossfit.com/leaderboard/semifinals/2024?semifinal=237&division=1&sort=0
-# meta = {"comp": "CF Semis '24", "D": 100, "C": 40}
-# data = data + [
-#     {"name": "Moritz Fiebig", "gender": "m", "place": 10, **meta},
-#     {"name": "Tobias Fox", "gender": "m", "place": 34, **meta},
-#     {"name": "Franziska Höger", "gender": "f", "place": 21, **meta},
-#     {"name": "Julia Jakobsen", "gender": "f", "place": 32, **meta},
-#     {"name": "Katharina Isele", "gender": "f", "place": 39, **meta},
-# ]
 
 
 # Bohemian Throwdown
