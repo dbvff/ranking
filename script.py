@@ -43,6 +43,30 @@ data = data + [
     {"name": "Moritz Fiebig", "gender": "m", "place": 3, **meta},
 ]
 
+# Eurasia Throwdown
+# https://competitioncorner.net/ff/16639/results
+meta = {"comp": "Eurasia TD", "D": 20, "C": 5}
+data = data + [
+    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 2, **meta},
+]
+
+# Athens Throwdown
+# https://circle21.events/event?competitionId=1de15018-4b21-4cd4-a0f8-4ef8f1a92122
+meta = {"comp": "Athens TD", "D": 100 - 40, "C": 10}
+data = data + [
+    {"name": "Verena Evelyn Reimers", "gender": "f", "place": 10, **meta},
+]
+
+# Wodland Fest
+# https://competitioncorner.net/ff/15993/results
+meta = {"comp": "Wodland Fest", "D": 100 - 20, "C": 20}
+data = data + [
+    {"name": "Moritz Fiebig", "gender": "m", "place": 2, **meta},
+    {"name": "Lenn Postel", "gender": "m", "place": 14, **meta},
+    {"name": "Julia Jakobsen", "gender": "f", "place": 11, **meta},
+]
+
+
 # Indy: iF3 Euros, final day,
 # https://scoring.fit/1893/leaderboard
 meta = {"comp": "iF3 Euros '24", "D": 100-50, "C": 7}
@@ -54,14 +78,14 @@ data = data + [
 
 # Indy: CrossFit Semifinals (French TD),
 # https://games.crossfit.com/leaderboard/semifinals/2024?semifinal=237&division=1&sort=0
-meta = {"comp": "CF Semis '24", "D": 100, "C": 40}
-data = data + [
-    {"name": "Moritz Fiebig", "gender": "m", "place": 10, **meta},
-    {"name": "Tobias Fox", "gender": "m", "place": 34, **meta},
-    {"name": "Franziska Höger", "gender": "f", "place": 21, **meta},
-    {"name": "Julia Jakobsen", "gender": "f", "place": 32, **meta},
-    {"name": "Katharina Isele", "gender": "f", "place": 39, **meta},
-]
+# meta = {"comp": "CF Semis '24", "D": 100, "C": 40}
+# data = data + [
+#     {"name": "Moritz Fiebig", "gender": "m", "place": 10, **meta},
+#     {"name": "Tobias Fox", "gender": "m", "place": 34, **meta},
+#     {"name": "Franziska Höger", "gender": "f", "place": 21, **meta},
+#     {"name": "Julia Jakobsen", "gender": "f", "place": 32, **meta},
+#     {"name": "Katharina Isele", "gender": "f", "place": 39, **meta},
+# ]
 
 
 # Bohemian Throwdown
