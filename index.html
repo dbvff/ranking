@@ -352,7 +352,7 @@ const createTable = (tableData) => {
         row.appendChild(cell);
 
         cell = document.createElement('td');
-        if( rowData['total_diff'] != 0){
+        if( rowData['total_diff'] > 0 || rowData['total_diff'] < 0){
             cell.appendChild(document.createTextNode(rowData['total_diff']));
         }
         row.appendChild(cell);

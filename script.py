@@ -271,7 +271,7 @@ meta = {"comp": "FTD '25 MMFF", "D": 40, "C": 20}
 data = data + [
     {"name": "Jana Geertz", "gender": "f", "place": 2, **meta},
 
-    {"name": "Felix Rheder", "gender": "m", "place": 4, **meta},
+    {"name": "Felix Rehder", "gender": "m", "place": 4, **meta},
     {"name": "Julia Jakobsen", "gender": "f", "place": 4, **meta},
 
     {"name": "Noel Nagel", "gender": "m", "place": 8, **meta},
@@ -450,7 +450,7 @@ for gender in ("f", "m"):
 
     df_tmp = df_curr.join(df_prev, how="left", rsuffix="_prev")
     df_tmp["rank_diff"] = df_tmp["rank_prev"] - df_tmp["rank"]
-    df_tmp["total_diff"] = df_tmp["total"] - df_tmp["total_prev"]
+    df_tmp["total_diff"] = df_tmp["total"] - df_tmp["total_prev"].fillna(0)
     df_tmp = df_tmp.rename_axis("name").reset_index()
     df_tmp = df_tmp[["name", "rank", "total", "rank_diff", "total_diff", "comps", "details"]]
     df_tmp.to_csv(f"results/{gender}c-{curr}.csv", index=False)
