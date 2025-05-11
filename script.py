@@ -38,28 +38,28 @@ meta = {"comp": "WZA '25", "D": 150, "C": 15}
 
 # Indy: Picsil Showdown
 # https://arena.wodbuster.com/competition.aspx?id=2551
-meta = {"comp": "Picsil'25", "D": 20 + 40, "C": 5}
+meta = {"comp": "Picsil '25", "D": 20 + 40, "C": 5}
 data = data + [
     {"name": "Moritz Fiebig", "gender": "m", "place": 3, **meta},
 ]
 
 # Eurasia Throwdown
 # https://competitioncorner.net/ff/16639/results
-meta = {"comp": "Eurasia TD", "D": 20, "C": 5}
+meta = {"comp": "Eurasia TD '25", "D": 20, "C": 5}
 data = data + [
     {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 2, **meta},
 ]
 
 # Athens Throwdown
 # https://circle21.events/event?competitionId=1de15018-4b21-4cd4-a0f8-4ef8f1a92122
-meta = {"comp": "Athens TD", "D": 100 - 40, "C": 10}
+meta = {"comp": "Athens TD '25", "D": 100 - 40, "C": 10}
 data = data + [
     {"name": "Verena Evelyn Reimers", "gender": "f", "place": 10, **meta},
 ]
 
 # Wodland Fest
 # https://competitioncorner.net/ff/15993/results
-meta = {"comp": "Wodland Fest", "D": 100 - 20, "C": 20}
+meta = {"comp": "Wodland Fest '25", "D": 100 - 20, "C": 20}
 data = data + [
     {"name": "Moritz Fiebig", "gender": "m", "place": 2, **meta},
     {"name": "Lenn Postel", "gender": "m", "place": 14, **meta},
@@ -69,20 +69,18 @@ data = data + [
 
 # French TD
 # https://competitioncorner.net/ff/16541/results/details
-# meta = {"comp": "French TD", "D": 100 + 20, "C": 40}
-# data = data + [
-#     {"name": "", "gender": "m", "place": 1, **meta},
-#     {"name": "", "gender": "m", "place": 2, **meta},
-#     {"name": "", "gender": "m", "place": 3, **meta},
-#     {"name": "", "gender": "f", "place": 1, **meta},
-#     {"name": "", "gender": "f", "place": 2, **meta},
-#     {"name": "", "gender": "f", "place": 3, **meta},
-# ]
-
+meta = {"comp": "FTD '25", "D": 100 + 20, "C": 40}
+data = data + [
+    {"name": "Moritz Fiebig", "gender": "m", "place": 1, **meta},
+    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 6, **meta},
+    {"name": "Eric Zuchold", "gender": "m", "place": 8, **meta},
+    {"name": "Karl Feldmer", "gender": "m", "place": 35, **meta},
+    {"name": "Katharina Isele", "gender": "f", "place": 26, **meta},
+]
 
 # WFP Tour Event 1
 # https://competitioncorner.net/ff/16060/results
-# meta = {"comp": "WFP 1", "D": 150, "C": 30}
+# meta = {"comp": "WFP 1 '25", "D": 150, "C": 30}
 
 
 
@@ -97,7 +95,7 @@ data = data + [
 
 # Bohemian Throwdown
 # https://competitioncorner.net/ff/12905/results#male_81233
-meta = {"comp": "Bohemian TD", "D": 20, "C": 3}
+meta = {"comp": "Bohemian TD '24", "D": 20, "C": 3}
 data = data + [
     {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
 ]
@@ -267,20 +265,26 @@ data = data + [
 ]
 
 
-# Teams: CrossFit Semifinals, Team of 4
-# https://games.crossfit.com/leaderboard/semifinals/2024?semifinal=237&division=11&sort=0
-meta = {"comp": "CF Semis '24 MMFF", "D": 50, "C": 30, "team": 4}
+# French TD MMFF
+# https://competitioncorner.net/ff/16541/results/details
+meta = {"comp": "FTD '25 MMFF", "D": 40, "C": 20}
 data = data + [
-    {"name": "Daniel Goncharov", "gender": "m", "place": 23, **meta}, # Wysh
-    {"name": "Karl Feldmer", "gender": "m", "place": 23, **meta}, # Wysh
-    {"name": "Sarah Antonia Ziemens", "gender": "f", "place": 23, **meta}, # Wysh
-    {"name": "Vivien-Marie Christian", "gender": "f", "place": 23, **meta}, # Wysh
-    {"name": "Lars Jakobeit", "gender": "m", "place": 24, **meta}, # Aorta
-    {"name": "Hendrik Senf", "gender": "m", "place": 24, **meta}, # Aorta
-    {"name": "Susan Treppner", "gender": "f", "place": 24, **meta}, # Aorta
-    {"name": "Leon Wagenknecht", "gender": "m", "place": 3, **meta}, # Oslo Kriger PSL
-    {"name": "Felix Rehder", "gender": "m", "place": 5, **meta}, # Bucher's Lab
+    {"name": "Jana Geertz", "gender": "f", "place": 2, **meta},
+
+    {"name": "Felix Rheder", "gender": "m", "place": 4, **meta},
+    {"name": "Julia Jakobsen", "gender": "f", "place": 4, **meta},
+
+    {"name": "Noel Nagel", "gender": "m", "place": 8, **meta},
+    {"name": "Robert Dopke", "gender": "m", "place": 8, **meta},
+    {"name": "Christina Petersen", "gender": "f", "place": 8, **meta},
+    {"name": "Sarah Antonia Ziemens", "gender": "f", "place": 8, **meta},
+
+    {"name": "Anton Quiring", "gender": "m", "place": 16, **meta},
+    {"name": "Benjamin Huxol", "gender": "m", "place": 16, **meta},
+    {"name": "Lidia Barto", "gender": "f", "place": 16, **meta},
+    {"name": "Caroline Müller-Korn", "gender": "f", "place": 16, **meta},
 ]
+
 
 # Teams: CrossFit Games, Team of 4
 meta = {"comp": "CFG '24 MMFF", "D": 100, "C": 30, "team": 4}
