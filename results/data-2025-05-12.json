@@ -438,6 +438,45 @@
             13
         ]
     },
+    "Felix Rehder": {
+        "total": 84,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "GTD'24 (6.pl; 40pts)",
+            "FTD '25 MMFF (4.pl; 34pts)",
+            "CFG '24 MMFF (28.pl; 10pts)"
+        ],
+        "details2": [
+            {
+                "place": 6,
+                "comp": "GTD'24",
+                "D": 80,
+                "C": 10,
+                "points": 40
+            },
+            {
+                "place": 4,
+                "comp": "FTD '25 MMFF",
+                "D": 40,
+                "C": 20,
+                "points": 34
+            },
+            {
+                "place": 28,
+                "comp": "CFG '24 MMFF",
+                "D": 100,
+                "C": 30,
+                "points": 10
+            }
+        ],
+        "tiebreak": [
+            84,
+            40,
+            34,
+            10
+        ]
+    },
     "Vivien-Marie Christian": {
         "total": 81,
         "comps": 3,
@@ -625,37 +664,6 @@
             0
         ]
     },
-    "Felix Rehder": {
-        "total": 50,
-        "comps": 2,
-        "gender": "m",
-        "details": [
-            "GTD'24 (6.pl; 40pts)",
-            "CFG '24 MMFF (28.pl; 10pts)"
-        ],
-        "details2": [
-            {
-                "place": 6,
-                "comp": "GTD'24",
-                "D": 80,
-                "C": 10,
-                "points": 40
-            },
-            {
-                "place": 28,
-                "comp": "CFG '24 MMFF",
-                "D": 100,
-                "C": 30,
-                "points": 10
-            }
-        ],
-        "tiebreak": [
-            50,
-            40,
-            10,
-            0
-        ]
-    },
     "Lidia Barto": {
         "total": 48,
         "comps": 3,
@@ -825,29 +833,6 @@
             18,
             10,
             8
-        ]
-    },
-    "Felix Rheder": {
-        "total": 34,
-        "comps": 1,
-        "gender": "m",
-        "details": [
-            "FTD '25 MMFF (4.pl; 34pts)"
-        ],
-        "details2": [
-            {
-                "place": 4,
-                "comp": "FTD '25 MMFF",
-                "D": 40,
-                "C": 20,
-                "points": 34
-            }
-        ],
-        "tiebreak": [
-            34,
-            34,
-            0,
-            0
         ]
     },
     "Diana Vetter": {
