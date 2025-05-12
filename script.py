@@ -267,7 +267,7 @@ data = data + [
 
 # French TD MMFF
 # https://competitioncorner.net/ff/16541/results/details
-meta = {"comp": "FTD '25 MMFF", "D": 40, "C": 20}
+meta = {"comp": "FTD '25 MMFF", "D": 40, "C": 20, "team": 4}
 data = data + [
     {"name": "Jana Geertz", "gender": "f", "place": 2, **meta},
 
