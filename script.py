@@ -6,10 +6,10 @@ import glob
 
 # variables
 now = datetime.today().strftime('%Y-%m-%d')
-now = "2025-05-12"
+now = "2025-07-06"
 
 # settings
-prev, curr = "2025-02-18", now
+prev, curr = "2025-05-12", now
 
 
 # ----------------------------------------------------------------------------
@@ -94,27 +94,66 @@ data = data + [
 
 
 # Bohemian Throwdown
-# https://competitioncorner.net/ff/12905/results#male_81233
-meta = {"comp": "Bohemian TD '24", "D": 20, "C": 3}
+# https://competitioncorner.net/ff/16226/results
+meta = {"comp": "Bohemian TD '25", "D": 20, "C": 5}
 data = data + [
     {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
+    {"name": "Max Hinkofer", "gender": "m", "place": 3, **meta},
+    {"name": "Susan Treppner", "gender": "f", "place": 3, **meta},
 ]
+
+# Battle the Lion
+# https://circle21.events/event?competitionId=e1311f35-b4e9-4af7-8d2e-67e428f475bf
+meta = {"comp": "Lions '25", "D": 20, "C": 5}
+data = data + [
+    {"name": "Julia Jakobsen", "gender": "f", "place": 1, **meta},
+    {"name": "Jana Geertz", "gender": "f", "place": 2, **meta},
+    {"name": "Pia Zeller", "gender": "f", "place": 3, **meta},
+    {"name": "Anna Bittner", "gender": "f", "place": 4, **meta},
+    {"name": "Katharina Blank", "gender": "f", "place": 5, **meta},
+    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
+    {"name": "Julius Kieser", "gender": "m", "place": 2, **meta},
+    {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
+    {"name": "Oskar Günther", "gender": "m", "place": 4, **meta},
+    {"name": "Tobias Becker", "gender": "m", "place": 5, **meta},
+]
+
+# Varna Throwdown 2025
+# https://circle21.events/event?competitionId=92d6d520-5268-4456-917a-d8298e5798d0
+# meta = {"comp": "Varna '25", "D": 20, "C": 5}
+
+
+# Alsace Throwdown 2025
+# https://competitioncorner.net/ff/16498/results
+meta = {"comp": "Alsace '25", "D": 20, "C": 3}
+data = data + [
+    {"name": "Maja Laloš", "gender": "f", "place": 2, **meta},
+]
+
+# Turku Tuomiopäivä 2025
+# https://competitioncorner.net/ff/16620/results
+# meta = {"comp": "Turku '25", "D": 20, "C": 5}
+
+# UBL Italian Championship 2025
+# https://app.judgerules.it/#/events/760/leaderboard
+# meta = {"comp": "UBL '25", "D": 20, "C": 4}
 
 
 # Indy: DBVfF Deutsche Meisterschaft
-# https://competitioncorner.net/ff/12498/results#male_78581
-meta = {"comp": "DBVfF DM'24", "D": 20, "C": 5}
+# https://competitioncorner.net/events/15263/details
+meta = {"comp": "DBVfF DM'25", "D": 20, "C": 5}
 data = data + [
-    {"name": "Julius Kieser", "gender": "m", "place": 1, **meta},
-    {"name": "Lenn Postel", "gender": "m", "place": 2, **meta},
-    {"name": "Benjamin Huxol", "gender": "m", "place": 3, **meta},
-    {"name": "Karl Feldmer", "gender": "m", "place": 4, **meta},
-    {"name": "Noel Nagel", "gender": "m", "place": 5, **meta},
+    {"name": "Benjamin Huxol", "gender": "m", "place": 1, **meta},
+    {"name": "Eric Zuchold", "gender": "m", "place": 2, **meta},
+    {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
+    {"name": "Lenn Postel", "gender": "m", "place": 4, **meta},
+    {"name": "Max Hinkofer", "gender": "m", "place": 5, **meta},
+
     {"name": "Julia Jakobsen", "gender": "f", "place": 1, **meta},
     {"name": "Vivien-Marie Christian", "gender": "f", "place": 2, **meta},
-    {"name": "Lidia Barto", "gender": "f", "place": 3, **meta},
-    {"name": "Caroline Müller-Korn", "gender": "f", "place": 4, **meta},
-    {"name": "Verena Evelyn Reimers", "gender": "f", "place": 5, **meta},
+    {"name": "Jana Geertz", "gender": "f", "place": 3, **meta},
+    {"name": "Franziska Bröhl", "gender": "f", "place": 4, **meta},
+    {"name": "Lidia Barto", "gender": "f", "place": 5, **meta},
 ]
 
 
@@ -127,17 +166,6 @@ data = data + [
 ]
 
 
-# Battle the Lion
-# https://competitioncorner.net/events/13742/details
-meta = {"comp": "Lions '24", "D": 20, "C": 3}
-data = data + [
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
-    {"name": "Nick Mentzel", "gender": "m", "place": 2, **meta},
-    {"name": "Jona Kemmann", "gender": "m", "place": 3, **meta},
-    {"name": "Klaudia Dabrowska", "gender": "f", "place": 1, **meta},
-    {"name": "Pia Zeller", "gender": "f", "place": 2, **meta},
-    {"name": "Anna Hartje", "gender": "f", "place": 3, **meta},
-]
 
 
 # CrossFit Games, Indy,
