@@ -346,7 +346,7 @@ data = data + [
 # ]
 meta = {"comp": "BtB '25 MF", "D": 15, "C": 1, "team": 2}
 data = data + [
-    {"name": "Max Hinköfer", "gender": "m", "place": 1, **meta},
+    {"name": "Max Hinkofer", "gender": "m", "place": 1, **meta},
     # {"name": "", "gender": "f", "place": 1, **meta},
 ]
 
