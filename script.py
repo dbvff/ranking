@@ -6,10 +6,10 @@ import glob
 
 # variables
 now = datetime.today().strftime('%Y-%m-%d')
-now = "2025-07-06"
+now = "2025-08-31"
 
 # settings
-prev, curr = "2025-05-12", now
+prev, curr = "2025-07-06", now
 
 
 # ----------------------------------------------------------------------------
@@ -156,33 +156,47 @@ data = data + [
     {"name": "Lidia Barto", "gender": "f", "place": 5, **meta},
 ]
 
-
-# CISM Functional Fitness European Open
-meta = {"comp": "CISM Euro'24", "D": 100 - 70, "C": 3}
+# Strength in Depth 2025
+# https://circle21.events/event?competitionId=fa283049-d38a-4a0d-837f-f8420f414270&tab=leaderboard
+meta = {"comp": "SiD '25", "D": 20, "C": 4}
 data = data + [
-    {"name": "Odo Federolf", "gender": "m", "place": 1, **meta},
-    {"name": "Diana Vetter", "gender": "f", "place": 1, **meta},
-    {"name": "Anna Hartje", "gender": "f", "place": 3, **meta},
+    {"name": "Anja Keller", "gender": "f", "place": 3, **meta},
 ]
 
 
+# CISM Regional Military Championships
+# meta = {"comp": "CISM Euro'25", "D": 100 - 90, "C": 1}
 
 
-# CrossFit Games, Indy,
-# https://games.crossfit.com/leaderboard/finals/2024?final=225&division=1&sort=0
-meta = {"comp": "CF Games '24", "D": 150+50, "C": 40}
+# Marseille Throwdown
+# https://competitioncorner.net/ff/16863/results#female_108983
+# meta = {"comp": "Marseille '25", "D": 20, "C": 3}
+
+
+# CrossFit Games, Indy
+# https://games.crossfit.com/leaderboard/finals/2025?final=245&division=1&sort=0
+meta = {"comp": "CF Games '25", "D": 150+50, "C": 30}
 data = data + [
-    {"name": "Moritz Fiebig", "gender": "m", "place": 33, **meta},
+    {"name": "Moritz Fiebig", "gender": "m", "place": 19, **meta},
 ]
 
 
-# Liege Throwdown, https://competitioncorner.net/ff/13791/results#male_87808
-meta = {"comp": "Liege", "D": 20, "C": 3}
+# Liege Throwdown
+# https://competitioncorner.net/events/16388/details
+meta = {"comp": "Liege '25", "D": 20, "C": 3}
 data = data + [
-    {"name": "Tobias Fox", "gender": "m", "place": 1, **meta},
-    {"name": "Lidia Barto", "gender": "f", "place": 1, **meta},
+    {"name": "Lidia Barto", "gender": "f", "place": 2, **meta},
+    {"name": "Susan Treppner", "gender": "f", "place": 3, **meta},
+    {"name": "Benjamin Huxol", "gender": "m", "place": 1, **meta},
+    {"name": "Tobias Becker", "gender": "m", "place": 3, **meta},
 ]
 
+# WFP Tour Event 2
+# https://competitioncorner.net/ff/17218/results#male_111554
+meta = {"comp": "WFP 2 '25", "D": 150, "C": 30}
+data = data + [
+    {"name": "Julius Kieser", "gender": "m", "place": 29, **meta},
+]
 
 # Lowlands TD
 # https://competitioncorner.net/ff/12475/results#male_78462
@@ -315,29 +329,25 @@ data = data + [
 
 
 # Teams: CrossFit Games, Team of 4
-meta = {"comp": "CFG '24 MMFF", "D": 100, "C": 30, "team": 4}
-data = data + [
-    {"name": "Leon Wagenknecht", "gender": "m", "place": 20, **meta}, # Oslo Kriger PSL
-    {"name": "Felix Rehder", "gender": "m", "place": 28, **meta}, # Bucher's Lab
-]
+# meta = {"comp": "CFG '25 MMFF", "D": 100, "C": 20, "team": 4}
 
 
 # Teams: Battle the Beach, MM, FF, MF
-# https://portal.circle21.app/event?competitionId=1e0b79ee-b731-4b7b-9183-25003a43ccda
-meta = {"comp": "BtB '24 MM", "D": 15, "C": 1, "team": 2}
+# https://circle21.events/event?competitionId=e6ee04ed-9365-4800-a3ec-77a640d2d23e
+meta = {"comp": "BtB '25 MM", "D": 15, "C": 1, "team": 2}
 data = data + [
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
-    {"name": "Odo Federolf", "gender": "m", "place": 1, **meta},
+    {"name": "Malte Golldack-Bosen", "gender": "m", "place": 1, **meta},
+    {"name": "Marc Nowatzke", "gender": "m", "place": 1, **meta},
 ]
-meta = {"comp": "BtB '24 FF", "D": 15, "C": 1, "team": 2}
+# meta = {"comp": "BtB '25 FF", "D": 15, "C": 1, "team": 2}
+# data = data + [
+#     {"name": "", "gender": "f", "place": 1, **meta},
+#     {"name": "", "gender": "f", "place": 1, **meta},
+# ]
+meta = {"comp": "BtB '25 MF", "D": 15, "C": 1, "team": 2}
 data = data + [
-    {"name": "Vivien-Marie Christian", "gender": "f", "place": 1, **meta},
-    {"name": "Susan Treppner", "gender": "f", "place": 1, **meta},
-]
-meta = {"comp": "BtB '24 MF", "D": 15, "C": 1, "team": 2}
-data = data + [
-    {"name": "Oskar Günther", "gender": "m", "place": 1, **meta},
-    {"name": "Judith Melcher", "gender": "f", "place": 1, **meta},
+    {"name": "Max Hinköfer", "gender": "m", "place": 1, **meta},
+    # {"name": "", "gender": "f", "place": 1, **meta},
 ]
 
 
