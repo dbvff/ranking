@@ -742,6 +742,53 @@
             10
         ]
     },
+    "Max Hinkofer": {
+        "total": 33,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "BtB '25 MF (1.pl; 15pts)",
+            "Bohemian TD '25 (3.pl; 12pts)",
+            "Swiss TD (3.pl; 6pts)",
+            "DBVfF DM'25 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "BtB '25 MF",
+                "D": 15,
+                "C": 1,
+                "points": 15
+            },
+            {
+                "place": 3,
+                "comp": "Bohemian TD '25",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            },
+            {
+                "place": 3,
+                "comp": "Swiss TD",
+                "D": 20,
+                "C": 3,
+                "points": 6
+            },
+            {
+                "place": 5,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            33,
+            15,
+            12,
+            6
+        ]
+    },
     "Leon Wagenknecht": {
         "total": 32,
         "comps": 1,
@@ -881,45 +928,6 @@
             6
         ]
     },
-    "Max Hinkofer": {
-        "total": 22,
-        "comps": 3,
-        "gender": "m",
-        "details": [
-            "Bohemian TD '25 (3.pl; 12pts)",
-            "Swiss TD (3.pl; 6pts)",
-            "DBVfF DM'25 (5.pl; 4pts)"
-        ],
-        "details2": [
-            {
-                "place": 3,
-                "comp": "Bohemian TD '25",
-                "D": 20,
-                "C": 5,
-                "points": 12
-            },
-            {
-                "place": 3,
-                "comp": "Swiss TD",
-                "D": 20,
-                "C": 3,
-                "points": 6
-            },
-            {
-                "place": 5,
-                "comp": "DBVfF DM'25",
-                "D": 20,
-                "C": 5,
-                "points": 4
-            }
-        ],
-        "tiebreak": [
-            22,
-            12,
-            6,
-            4
-        ]
-    },
     "Christoph Verrieth": {
         "total": 16,
         "comps": 1,
@@ -977,29 +985,6 @@
             {
                 "place": 1,
                 "comp": "BtB '25 MM",
-                "D": 15,
-                "C": 1,
-                "points": 15
-            }
-        ],
-        "tiebreak": [
-            15,
-            15,
-            0,
-            0
-        ]
-    },
-    "Max Hink\u00f6fer": {
-        "total": 15,
-        "comps": 1,
-        "gender": "m",
-        "details": [
-            "BtB '25 MF (1.pl; 15pts)"
-        ],
-        "details2": [
-            {
-                "place": 1,
-                "comp": "BtB '25 MF",
                 "D": 15,
                 "C": 1,
                 "points": 15
