@@ -6,10 +6,10 @@ import glob
 
 # variables
 now = datetime.today().strftime('%Y-%m-%d')
-now = "2025-08-31"
+now = "2025-12-22"
 
 # settings
-prev, curr = "2025-07-06", now
+prev, curr = "2025-08-31", now
 
 
 # ----------------------------------------------------------------------------
@@ -85,11 +85,13 @@ data = data + [
 
 
 # Indy: iF3 Euros, final day,
-# https://scoring.fit/1893/leaderboard
-meta = {"comp": "iF3 Euros '24", "D": 100-50, "C": 7}
+# https://circle21.events/2025-if3-euro-seniors-juniors-19-20
+meta = {"comp": "iF3 Euros '25", "D": 100-50, "C": 10}
 data = data + [
-    {"name": "Julia Jakobsen", "gender": "f", "place": 2, **meta},
-    {"name": "Benjamin Huxol", "gender": "m", "place": 2, **meta},
+    {"name": "Franziska Bröhl", "gender": "f", "place": 6, **meta},
+    {"name": "Jana Geertz", "gender": "f", "place": 10, **meta},
+    {"name": "Benjamin Huxol", "gender": "m", "place": 1, **meta},
+    {"name": "Eric Zuchold", "gender": "m", "place": 8, **meta},
 ]
 
 
@@ -199,56 +201,58 @@ data = data + [
 ]
 
 # Lowlands TD
-# https://competitioncorner.net/ff/12475/results#male_78462
-meta = {"comp": "Low'24", "D": 100 - 20, "C": 10}
+# https://competitioncorner.net/ff/17935/results#male_116750
+meta = {"comp": "Low'25", "D": 100 - 20, "C": 10}
 data = data + [
-    {"name": "Tobias Fox", "gender": "m", "place": 2, **meta},
-    {"name": "Eric Zuchold", "gender": "m", "place": 3, **meta},
-    {"name": "Nick Mentzel", "gender": "m", "place": 5, **meta},
-    {"name": "Leon Wagenknecht", "gender": "m", "place": 7, **meta},
+    {"name": "Sarah Kay", "gender": "f", "place": 2, **meta},
+    {"name": "Sophia Frey", "gender": "f", "place": 6, **meta},
+    {"name": "Judith Melcher", "gender": "f", "place": 7, **meta},
 ]
 
 
-# GTD
-# https://portal.circle21.app/event?competitionId=3e2286e1-6b41-459b-8c72-bf911cf3fa38
-meta = {"comp": "GTD'24", "D": 100 - 20, "C": 10}
+# German Throwdown
+# https://circle21.events/german-throwdown-2025?tab=leaderboard
+meta = {"comp": "GTD'25", "D": 100 - 20, "C": 10}
 data = data + [
-    {"name": "Moritz Fiebig", "gender": "m", "place": 1, **meta},
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 4, **meta},
-    {"name": "Nick Mentzel", "gender": "m", "place": 5, **meta},
-    {"name": "Felix Rehder", "gender": "m", "place": 6, **meta},
-    {"name": "Christoph Verrieth", "gender": "m", "place": 9, **meta},
-    {"name": "Julia Jakobsen", "gender": "f", "place": 5, **meta},
-    {"name": "Jana Geertz", "gender": "f", "place": 7, **meta},
-    {"name": "Lidia Barto", "gender": "f", "place": 9, **meta},
+    {"name": "Julius Kieser", "gender": "m", "place": 1, **meta},
+    {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
+    {"name": "Max Hinkofer", "gender": "m", "place": 5, **meta},
+    {"name": "John Schäffer", "gender": "m", "place": 6, **meta},
+    {"name": "Christoph Verrieth", "gender": "m", "place": 7, **meta},
+    {"name": "Nick Mentzel", "gender": "m", "place": 8, **meta},
+    {"name": "Tobias Becker", "gender": "m", "place": 7, **meta},
+
+    {"name": "Julia Jakobsen", "gender": "f", "place": 1, **meta},
+    {"name": "Jana Geertz", "gender": "f", "place": 4, **meta},
+    {"name": "Lidia Barto", "gender": "f", "place": 6, **meta},
+    {"name": "Maja Laloš", "gender": "f", "place": 7, **meta},
+    {"name": "Susan Treppner", "gender": "f", "place": 9, **meta},
 ]
 
 
 # Marbella Championship
-# https://competitioncorner.net/ff/11879/results#male_73713
-meta = {"comp": "Marbella", "D": 100 - 40, "C": 10}
-data = data + [
-    {"name": "Caroline Müller-Korn", "gender": "f", "place": 8, **meta},
-    {"name": "Benjamin Huxol", "gender": "m", "place": 5, **meta},
-]
+# https://circle21.events/marbella-championship-2025-final-event?tab=leaderboard
+# meta = {"comp": "Marbella '25", "D": 100 - 40, "C": 10}
+# data = data + [
+# ]
 
 
 # Swiss Throwdown,
-# https://competitioncorner.net/ff/14028/results#male_89336
+# https://circle21.events/swiss-throwdown-2025-finals?tab=leaderboard
 meta = {"comp": "Swiss TD", "D": 20, "C": 3}
 data = data + [
-    {"name": "Julius Kieser", "gender": "m", "place": 1, **meta},
-    {"name": "Max Hinkofer", "gender": "m", "place": 3, **meta},
+    {"name": "Siegfried Kramer", "gender": "m", "place": 2, **meta},
 ]
 
 
-# Czech Throwdown,
-# https://competitioncorner.net/ff/11801/results#male_73243
-meta = {"comp": "Czech TD", "D": 20, "C": 3}
+# Czechia Throwdown,
+# https://circle21.events/czechia-throwdown-2025-finals?tab=leaderboard
+meta = {"comp": "Czechia TD '25", "D": 20, "C": 5}
 data = data + [
-    {"name": "Lenn Postel", "gender": "m", "place": 1, **meta},
-    {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
-    {"name": "Sarah Antonia Ziemens", "gender": "f", "place": 2, **meta},
+    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
+    {"name": "Lenn Postel", "gender": "m", "place": 2, **meta},
+    {"name": "Anja Keller", "gender": "f", "place": 1, **meta},
+    {"name": "Anna Bittner", "gender": "f", "place": 4, **meta},
 ]
 
 
@@ -259,40 +263,42 @@ meta = {"comp": "Rogue '24", "D": 150, "C": 15}
 
 
 # Amsterdam Throwdown
-# https://competitioncorner.net/ff/14853/results#male_94600
-# 23/24.Nov.'24
-meta = {"comp": "Amsterdam", "D": 20, "C": 3}
-data = data + [
-    {"name": "Lenn Postel", "gender": "m", "place": 2, **meta},
-    {"name": "Susan Treppner", "gender": "f", "place": 3, **meta},
-]
+# https://competitioncorner.net/ff/18028/results#female_117289
+#meta = {"comp": "Amsterdam", "D": 20, "C": 3}
+#data = data + [
+#]
 
 
 # Austrian Throwdown,
-# https://portal.circle21.app/event?competitionId=72d39ec9-32fa-426f-b0ba-ca976e23fb43
-# 30.Nov.
-meta = {"comp": "Austria TD", "D": 20, "C": 3}
-# nobody in top-3
+# https://circle21.events/austrian-throwdown-2025?tab=leaderboard
+meta = {"comp": "Austria TD", "D": 20, "C": 4}
+data = data + [
+    {"name": "Julius Kieser", "gender": "m", "place": 2, **meta},
+    {"name": "Julia Jakobsen", "gender": "f", "place": 1, **meta},
+]
 
 
 # Dubai
-# 6-8.Dec.'24
-# https://competitioncorner.net/events/15168/details
-meta = {"comp": "Dubai '24", "D": 150, "C": 15}
-data = data + [
-      {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 15, **meta},
-]
+# ausgefallen
+#meta = {"comp": "Dubai '24", "D": 150, "C": 15}
+#data = data + [
+#]
 
 
 # iF3 Worlds
-# 15.Dez,'24
-# https://portal.circle21.app/event?competitionId=beb79dfb-7d92-4bce-ad4a-06b17e17873c
-meta = {"comp": "iF3 Worlds '24", "D": 150, "C": 6}
-data = data + [
-    {"name": "Lenn Postel", "gender": "m", "place": 3, **meta},
-    {"name": "Julia Jakobsen", "gender": "f", "place": 4, **meta},
-]
+# https://circle21.events/2025-if3-worlds-juniors-seniors-teams?tab=leaderboard
+# meta = {"comp": "iF3 Worlds '25", "D": 150, "C": 6}
+# data = data + [
+# ]
 
+
+# World Fitness Project Finals
+# https://competitioncorner.net/ff/17370/results
+meta = {"comp": "WFP Finals '25", "D": 200, "C": 30}
+data = data + [
+    {"name": "Julius Kieser", "gender": "m", "place": 28, **meta},
+    {"name": "Vivien-Marie Christian", "gender": "f", "place": 26, **meta},
+]
 
 
 
@@ -351,21 +357,26 @@ data = data + [
 ]
 
 
+# Mayenne Throwdown
+# https://competitioncorner.net/ff/15879/results#team_101780
+meta = {"comp": "Mayenne TD '25 MMFF", "D": 40, "C": 4, "team": 4}
+data = data + [
+    {"name": "Felix Rehder", "gender": "m", "place": 2, **meta},
+    {"name": "Julia Jakobsen", "gender": "f", "place": 2, **meta},
+]
+
+
 # Teams: Double Trouble, MF
 # https://portal.circle21.app/event?competitionId=09edff51-5283-4076-a07a-a5f3ea98ff63
-meta = {"comp": "DT '24 MF", "D": 15, "C": 1, "team": 2}
+#meta = {"comp": "DT '24 MF", "D": 15, "C": 1, "team": 2}
 # no top-1
 
 
 # Teams: iF3 Worlds, Team of 4, final day
-# https://portal.circle21.app/event?competitionId=beb79dfb-7d92-4bce-ad4a-06b17e17873c
-meta = {"comp": "iF3 Worlds '24 MMFF", "D": 75, "C": 6, "team": 4}
-data = data + [
-    {"name": "Noel Nagel", "gender": "m", "place": 3, **meta},
-    {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
-    {"name": "Vivien-Marie Christian", "gender": "f", "place": 3, **meta},
-    {"name": "Sarah Antonia Ziemens", "gender": "f", "place": 3, **meta},
-]
+# https://circle21.events/2025-if3-worlds-juniors-seniors-teams?tab=leaderboard
+#meta = {"comp": "iF3 Worlds '24 MMFF", "D": 75, "C": 6, "team": 4}
+#data = data + [
+#]
 
 
 
