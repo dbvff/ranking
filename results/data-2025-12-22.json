@@ -641,6 +641,37 @@
             0
         ]
     },
+    "Christoph Verrieth": {
+        "total": 47,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "GTD'25 (7.pl; 32pts)",
+            "Wodla Oslo '25 MF (3.pl; 15pts)"
+        ],
+        "details2": [
+            {
+                "place": 7,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 32
+            },
+            {
+                "place": 3,
+                "comp": "Wodla Oslo '25 MF",
+                "D": 45,
+                "C": 3,
+                "points": 15
+            }
+        ],
+        "tiebreak": [
+            47,
+            32,
+            15,
+            0
+        ]
+    },
     "Katharina Isele": {
         "total": 45,
         "comps": 1,
@@ -873,29 +904,6 @@
             0
         ]
     },
-    "Christoph Verrieth": {
-        "total": 32,
-        "comps": 1,
-        "gender": "m",
-        "details": [
-            "GTD'25 (7.pl; 32pts)"
-        ],
-        "details2": [
-            {
-                "place": 7,
-                "comp": "GTD'25",
-                "D": 80,
-                "C": 10,
-                "points": 32
-            }
-        ],
-        "tiebreak": [
-            32,
-            32,
-            0,
-            0
-        ]
-    },
     "Anja Keller": {
         "total": 30,
         "comps": 2,
@@ -1039,6 +1047,37 @@
             24,
             24,
             0,
+            0
+        ]
+    },
+    "Katharina Blank": {
+        "total": 19,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "Wodla Oslo '25 MF (3.pl; 15pts)",
+            "Lions '25 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 3,
+                "comp": "Wodla Oslo '25 MF",
+                "D": 45,
+                "C": 3,
+                "points": 15
+            },
+            {
+                "place": 5,
+                "comp": "Lions '25",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            19,
+            15,
+            4,
             0
         ]
     },
@@ -1253,29 +1292,6 @@
         "tiebreak": [
             6,
             6,
-            0,
-            0
-        ]
-    },
-    "Katharina Blank": {
-        "total": 4,
-        "comps": 1,
-        "gender": "f",
-        "details": [
-            "Lions '25 (5.pl; 4pts)"
-        ],
-        "details2": [
-            {
-                "place": 5,
-                "comp": "Lions '25",
-                "D": 20,
-                "C": 5,
-                "points": 4
-            }
-        ],
-        "tiebreak": [
-            4,
-            4,
             0,
             0
         ]

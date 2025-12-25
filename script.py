@@ -378,6 +378,14 @@ data = data + [
 #data = data + [
 #]
 
+# Teams: WODLA Oslo Throdown, MF
+# https://portal.circle21.app/event?competitionId=09edff51-5283-4076-a07a-a5f3ea98ff63
+meta = {"comp": "Wodla Oslo '25 MF", "D": 45, "C": 3, "team": 2}
+data = data + [
+    {"name": "Christoph Verrieth", "gender": "m", "place": 3, **meta},
+    {"name": "Katharina Blank", "gender": "f", "place": 3, **meta},
+]
+
 
 
 # ----------------------------------------------------------------------------
