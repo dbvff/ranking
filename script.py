@@ -29,99 +29,106 @@ data = []
 
 
 # UAE Storm Games
-# no indy participants in the top-5
+# cancelled
 
-
-# Indy: Wodapalooza '25
-meta = {"comp": "WZA '25", "D": 150, "C": 15}
+# Indy: Wodapalooza '26
+# https://competitioncorner.net/ff/19193/results
+meta = {"comp": "WZA '26", "D": 150, "C": 15}
 # no indy participants in the top-15
 
 # Indy: Picsil Showdown
-# https://arena.wodbuster.com/competition.aspx?id=2551
-meta = {"comp": "Picsil '25", "D": 20 + 40, "C": 5}
-data = data + [
-    {"name": "Moritz Fiebig", "gender": "m", "place": 3, **meta},
-]
+#meta = {"comp": "Picsil '25", "D": 20 + 40, "C": 5}
+# cancelled
 
-# Eurasia Throwdown
-# https://competitioncorner.net/ff/16639/results
-meta = {"comp": "Eurasia TD '25", "D": 20, "C": 5}
-data = data + [
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 2, **meta},
-]
 
 # Athens Throwdown
-# https://circle21.events/event?competitionId=1de15018-4b21-4cd4-a0f8-4ef8f1a92122
-meta = {"comp": "Athens TD '25", "D": 100 - 40, "C": 10}
-data = data + [
-    {"name": "Verena Evelyn Reimers", "gender": "f", "place": 10, **meta},
-]
+# https://circle21.events/athens-throwdown-2026-finals?tab=leaderboard
+#meta = {"comp": "Athens TD '26", "D": 100 - 40, "C": 8}
+# Nick Mentzel 11th, out of cutline
 
-# Wodland Fest
-# https://competitioncorner.net/ff/15993/results
-meta = {"comp": "Wodland Fest '25", "D": 100 - 20, "C": 20}
+
+# MAD
+# https://competitioncorner.net/ff/19407/results
+meta = {"comp": "MAD '26", "D": 100 + 20, "C": 40}
+data = data + [
+    {"name": "Robert Dopke", "gender": "m", "place": 20, **meta},
+    {"name": "Lenn Postel", "gender": "m", "place": 14, **meta},
+    {"name": "Anja Keller", "gender": "f", "place": 20, **meta},
+    {"name": "Sarah Kay", "gender": "f", "place": 32, **meta},
+]
+# Katarina Isele 41th, out of cutline
+
+# French TD
+# https://competitioncorner.net/ff/20465/results
+meta = {"comp": "FTD '26", "D": 100 + 20, "C": 40}
 data = data + [
     {"name": "Moritz Fiebig", "gender": "m", "place": 2, **meta},
-    {"name": "Lenn Postel", "gender": "m", "place": 14, **meta},
+    {"name": "Eric Zuchold", "gender": "m", "place": 29, **meta},
     {"name": "Julia Jakobsen", "gender": "f", "place": 11, **meta},
 ]
 
-
-# French TD
-# https://competitioncorner.net/ff/16541/results/details
-meta = {"comp": "FTD '25", "D": 100 + 20, "C": 40}
-data = data + [
-    {"name": "Moritz Fiebig", "gender": "m", "place": 1, **meta},
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 6, **meta},
-    {"name": "Eric Zuchold", "gender": "m", "place": 8, **meta},
-    {"name": "Karl Feldmer", "gender": "m", "place": 35, **meta},
-    {"name": "Katharina Isele", "gender": "f", "place": 26, **meta},
-]
-
 # WFP Tour Event 1
-# https://competitioncorner.net/ff/16060/results
-# meta = {"comp": "WFP 1 '25", "D": 150, "C": 30}
-
+# https://competitioncorner.net/ff/19995/results
+meta = {"comp": "WFP 1 London '26", "D": 150, "C": 38}
+data = data + [
+    {"name": "Anja Keller", "gender": "f", "place": 25, **meta},
+    {"name": "Julius Kieser", "gender": "m", "place": 20, **meta},
+]
+# Vivien-Marie Christian 44th, out of cutline
 
 
 # Indy: iF3 Euros, final day,
-# https://circle21.events/2025-if3-euro-seniors-juniors-19-20
-meta = {"comp": "iF3 Euros '25", "D": 100-50, "C": 10}
+#meta = {"comp": "iF3 Euros '25", "D": 100-50, "C": 10}
+# no athletes send by the DBVfF
+
+# German Classic
+# https://circle21.events/german-classics-indy-finals-2026?tab=leaderboard
+meta = {"comp": "German Classic '26", "D": 20, "C": 5}
 data = data + [
-    {"name": "Franziska Bröhl", "gender": "f", "place": 6, **meta},
-    {"name": "Jana Geertz", "gender": "f", "place": 10, **meta},
-    {"name": "Benjamin Huxol", "gender": "m", "place": 1, **meta},
-    {"name": "Eric Zuchold", "gender": "m", "place": 8, **meta},
+    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
+    {"name": "Christoph Verrieth", "gender": "m", "place": 2, **meta},
+    {"name": "Max Hinkofer", "gender": "m", "place": 3, **meta},
+    {"name": "Siegfried Kramer", "gender": "m", "place": 4, **meta},
+    {"name": "Jonathan Sindel", "gender": "m", "place": 5, **meta},
+    {"name": "Vroni Wirth", "gender": "f", "place": 1, **meta},
+    {"name": "Charis Zach", "gender": "f", "place": 2, **meta},
+    {"name": "Laura Dörr", "gender": "f", "place": 3, **meta},
+    {"name": "Katharina Blank", "gender": "f", "place": 4, **meta},
+    {"name": "Anna Bittner", "gender": "f", "place": 5, **meta},
 ]
+
+# Eurasia Throwdown
+# https://circle21.events/eurasia-throwdown-2026-final?tab=athletes
+# meta = {"comp": "Eurasia TD '25", "D": 20, "C": 5}
+# no athletes 
 
 
 # Bohemian Throwdown
-# https://competitioncorner.net/ff/16226/results
-meta = {"comp": "Bohemian TD '25", "D": 20, "C": 5}
+# https://circle21.events/bohemian-throwdown-2026-final?tab=leaderboard
+meta = {"comp": "Bohemian TD '26", "D": 20, "C": 5}
 data = data + [
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
-    {"name": "Max Hinkofer", "gender": "m", "place": 3, **meta},
-    {"name": "Susan Treppner", "gender": "f", "place": 3, **meta},
+    {"name": "Max Hinkofer", "gender": "m", "place": 5, **meta},
 ]
 
 # Battle the Lion
-# https://circle21.events/event?competitionId=e1311f35-b4e9-4af7-8d2e-67e428f475bf
-meta = {"comp": "Lions '25", "D": 20, "C": 5}
+# https://circle21.events/battle-of-the-lion-final-2026
+meta = {"comp": "Lion '26", "D": 20, "C": 5}
 data = data + [
-    {"name": "Julia Jakobsen", "gender": "f", "place": 1, **meta},
-    {"name": "Jana Geertz", "gender": "f", "place": 2, **meta},
-    {"name": "Pia Zeller", "gender": "f", "place": 3, **meta},
-    {"name": "Anna Bittner", "gender": "f", "place": 4, **meta},
-    {"name": "Katharina Blank", "gender": "f", "place": 5, **meta},
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
-    {"name": "Julius Kieser", "gender": "m", "place": 2, **meta},
-    {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
-    {"name": "Oskar Günther", "gender": "m", "place": 4, **meta},
-    {"name": "Tobias Becker", "gender": "m", "place": 5, **meta},
+    {"name": "Pia Zeller", "gender": "f", "place": 1, **meta},
+    {"name": "Elena Pommer", "gender": "f", "place": 2, **meta},
+    {"name": "Anna Gebel", "gender": "f", "place": 3, **meta},
+    {"name": "Laura Gläsner", "gender": "f", "place": 4, **meta},
+    {"name": "Christin Chollee", "gender": "f", "place": 5, **meta},
+
+    {"name": "Niklas Plankenhorn", "gender": "m", "place": 1, **meta},
+    {"name": "Manuel Rath", "gender": "m", "place": 2, **meta},
+    {"name": "Patrick Klinke", "gender": "m", "place": 3, **meta},
+    {"name": "Marcel Koppers", "gender": "m", "place": 4, **meta},
+    {"name": "Felix Paeper", "gender": "m", "place": 5, **meta},
 ]
 
 # Varna Throwdown 2025
-# https://circle21.events/event?competitionId=92d6d520-5268-4456-917a-d8298e5798d0
+# https://circle21.events/varna-throwdown-2026-finals
 # meta = {"comp": "Varna '25", "D": 20, "C": 5}
 
 
@@ -131,6 +138,8 @@ meta = {"comp": "Alsace '25", "D": 20, "C": 3}
 data = data + [
     {"name": "Maja Laloš", "gender": "f", "place": 2, **meta},
 ]
+# https://competitioncorner.net/ff/20359/results
+
 
 # Turku Tuomiopäivä 2025
 # https://competitioncorner.net/ff/16620/results
@@ -300,91 +309,6 @@ data = data + [
     {"name": "Vivien-Marie Christian", "gender": "f", "place": 26, **meta},
 ]
 
-
-
-# ----------------------------------------------------------------------------
-
-
-# Teams: Wodapalooza, Team of 3
-# https://competitioncorner.net/ff/15169/results#team_96480
-meta = {"comp": "WZA'25 MMM", "D": 90, "C": 30, "team": 3}
-data = data + [
-    {"name": "Moritz Fiebig", "gender": "m", "place": 10, **meta},
-]
-
-
-# French TD MMFF
-# https://competitioncorner.net/ff/16541/results/details
-meta = {"comp": "FTD '25 MMFF", "D": 40, "C": 20, "team": 4}
-data = data + [
-    {"name": "Jana Geertz", "gender": "f", "place": 2, **meta},
-
-    {"name": "Felix Rehder", "gender": "m", "place": 4, **meta},
-    {"name": "Julia Jakobsen", "gender": "f", "place": 4, **meta},
-
-    {"name": "Noel Nagel", "gender": "m", "place": 8, **meta},
-    {"name": "Robert Dopke", "gender": "m", "place": 8, **meta},
-    {"name": "Christina Petersen", "gender": "f", "place": 8, **meta},
-    {"name": "Sarah Antonia Ziemens", "gender": "f", "place": 8, **meta},
-
-    {"name": "Anton Quiring", "gender": "m", "place": 16, **meta},
-    {"name": "Benjamin Huxol", "gender": "m", "place": 16, **meta},
-    {"name": "Lidia Barto", "gender": "f", "place": 16, **meta},
-    {"name": "Caroline Müller-Korn", "gender": "f", "place": 16, **meta},
-]
-
-
-# Teams: CrossFit Games, Team of 4
-# meta = {"comp": "CFG '25 MMFF", "D": 100, "C": 20, "team": 4}
-
-
-# Teams: Battle the Beach, MM, FF, MF
-# https://circle21.events/event?competitionId=e6ee04ed-9365-4800-a3ec-77a640d2d23e
-meta = {"comp": "BtB '25 MM", "D": 15, "C": 1, "team": 2}
-data = data + [
-    {"name": "Malte Golldack-Bosen", "gender": "m", "place": 1, **meta},
-    {"name": "Marc Nowatzke", "gender": "m", "place": 1, **meta},
-]
-# meta = {"comp": "BtB '25 FF", "D": 15, "C": 1, "team": 2}
-# data = data + [
-#     {"name": "", "gender": "f", "place": 1, **meta},
-#     {"name": "", "gender": "f", "place": 1, **meta},
-# ]
-meta = {"comp": "BtB '25 MF", "D": 15, "C": 1, "team": 2}
-data = data + [
-    {"name": "Max Hinkofer", "gender": "m", "place": 1, **meta},
-    # {"name": "", "gender": "f", "place": 1, **meta},
-]
-
-
-# Mayenne Throwdown
-# https://competitioncorner.net/ff/15879/results#team_101780
-meta = {"comp": "Mayenne TD '25 MMFF", "D": 40, "C": 4, "team": 4}
-data = data + [
-    {"name": "Felix Rehder", "gender": "m", "place": 2, **meta},
-    {"name": "Julia Jakobsen", "gender": "f", "place": 2, **meta},
-]
-
-
-# Teams: Double Trouble, MF
-# https://portal.circle21.app/event?competitionId=09edff51-5283-4076-a07a-a5f3ea98ff63
-#meta = {"comp": "DT '24 MF", "D": 15, "C": 1, "team": 2}
-# no top-1
-
-
-# Teams: iF3 Worlds, Team of 4, final day
-# https://circle21.events/2025-if3-worlds-juniors-seniors-teams?tab=leaderboard
-#meta = {"comp": "iF3 Worlds '24 MMFF", "D": 75, "C": 6, "team": 4}
-#data = data + [
-#]
-
-# Teams: WODLA Oslo Throdown, MF
-# https://portal.circle21.app/event?competitionId=09edff51-5283-4076-a07a-a5f3ea98ff63
-meta = {"comp": "Wodla Oslo '25 MF", "D": 45, "C": 3, "team": 2}
-data = data + [
-    {"name": "Christoph Verrieth", "gender": "m", "place": 3, **meta},
-    {"name": "Katharina Blank", "gender": "f", "place": 3, **meta},
-]
 
 
 
