@@ -142,8 +142,12 @@ data = data + [
 
 
 # Turku Tuomiopäivä 2025
-# https://competitioncorner.net/ff/16620/results
-# meta = {"comp": "Turku '25", "D": 20, "C": 5}
+# https://competitioncorner.net/ff/20043/results
+meta = {"comp": "Turku '26", "D": 20, "C": 5}
+data = data + [
+    {"name": "Leon Wagenknecht", "gender": "m", "place": 5, **meta},
+    {"name": "Maja Laloš", "gender": "f", "place": 3, **meta},
+]
 
 # UBL Italian Championship 2025
 # https://app.judgerules.it/#/events/760/leaderboard
