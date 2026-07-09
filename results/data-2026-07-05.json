@@ -1,0 +1,1231 @@
+{
+    "Moritz Fiebig": {
+        "total": 197,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "FTD '26 (2.pl; 117pts)",
+            "CF Games '25 (19.pl; 80pts)"
+        ],
+        "details2": [
+            {
+                "place": 2,
+                "comp": "FTD '26",
+                "D": 120,
+                "C": 40,
+                "points": 117
+            },
+            {
+                "place": 19,
+                "comp": "CF Games '25",
+                "D": 200,
+                "C": 30,
+                "points": 80
+            }
+        ],
+        "tiebreak": [
+            197,
+            117,
+            80,
+            0
+        ]
+    },
+    "Julia Jakobsen": {
+        "total": 190,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "FTD '26 (11.pl; 90pts)",
+            "GTD'25 (1.pl; 80pts)",
+            "DBVfF DM'25 (1.pl; 20pts)",
+            "Austria TD (1.pl; 20pts)"
+        ],
+        "details2": [
+            {
+                "place": 11,
+                "comp": "FTD '26",
+                "D": 120,
+                "C": 40,
+                "points": 90
+            },
+            {
+                "place": 1,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 80
+            },
+            {
+                "place": 1,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            },
+            {
+                "place": 1,
+                "comp": "Austria TD",
+                "D": 20,
+                "C": 4,
+                "points": 20
+            }
+        ],
+        "tiebreak": [
+            190,
+            90,
+            80,
+            20
+        ]
+    },
+    "Julius Kieser": {
+        "total": 175,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "GTD'25 (1.pl; 80pts)",
+            "WFP 1 London '26 (20.pl; 75pts)",
+            "WFP Finals '25 (28.pl; 20pts)",
+            "Austria TD (2.pl; 15pts)",
+            "WFP 2 '25 (29.pl; 10pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 80
+            },
+            {
+                "place": 20,
+                "comp": "WFP 1 London '26",
+                "D": 150,
+                "C": 38,
+                "points": 75
+            },
+            {
+                "place": 28,
+                "comp": "WFP Finals '25",
+                "D": 200,
+                "C": 30,
+                "points": 20
+            },
+            {
+                "place": 2,
+                "comp": "Austria TD",
+                "D": 20,
+                "C": 4,
+                "points": 15
+            },
+            {
+                "place": 29,
+                "comp": "WFP 2 '25",
+                "D": 150,
+                "C": 30,
+                "points": 10
+            }
+        ],
+        "tiebreak": [
+            175,
+            80,
+            75,
+            20
+        ]
+    },
+    "Anja Keller": {
+        "total": 138,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "MAD '26 (20.pl; 63pts)",
+            "WFP 1 London '26 (25.pl; 55pts)",
+            "Czechia TD '25 (1.pl; 20pts)"
+        ],
+        "details2": [
+            {
+                "place": 20,
+                "comp": "MAD '26",
+                "D": 120,
+                "C": 40,
+                "points": 63
+            },
+            {
+                "place": 25,
+                "comp": "WFP 1 London '26",
+                "D": 150,
+                "C": 38,
+                "points": 55
+            },
+            {
+                "place": 1,
+                "comp": "Czechia TD '25",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            }
+        ],
+        "tiebreak": [
+            138,
+            63,
+            55,
+            20
+        ]
+    },
+    "Lenn Postel": {
+        "total": 117,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "MAD '26 (14.pl; 81pts)",
+            "DBVfF DM'25 (1.pl; 20pts)",
+            "Czechia TD '25 (2.pl; 16pts)"
+        ],
+        "details2": [
+            {
+                "place": 14,
+                "comp": "MAD '26",
+                "D": 120,
+                "C": 40,
+                "points": 81
+            },
+            {
+                "place": 1,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            },
+            {
+                "place": 2,
+                "comp": "Czechia TD '25",
+                "D": 20,
+                "C": 5,
+                "points": 16
+            }
+        ],
+        "tiebreak": [
+            117,
+            81,
+            20,
+            16
+        ]
+    },
+    "Sarah Kay": {
+        "total": 103,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "Low'25 (2.pl; 72pts)",
+            "MAD '26 (32.pl; 27pts)",
+            "DBVfF DM'25 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 2,
+                "comp": "Low'25",
+                "D": 80,
+                "C": 10,
+                "points": 72
+            },
+            {
+                "place": 32,
+                "comp": "MAD '26",
+                "D": 120,
+                "C": 40,
+                "points": 27
+            },
+            {
+                "place": 5,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            103,
+            72,
+            27,
+            4
+        ]
+    },
+    "Karl Feldmer": {
+        "total": 80,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "GTD'25 (3.pl; 64pts)",
+            "DBVfF DM'25 (2.pl; 16pts)"
+        ],
+        "details2": [
+            {
+                "place": 3,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 64
+            },
+            {
+                "place": 2,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 16
+            }
+        ],
+        "tiebreak": [
+            80,
+            64,
+            16,
+            0
+        ]
+    },
+    "Max Hinkofer": {
+        "total": 64,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "GTD'25 (5.pl; 48pts)",
+            "German Classic '26 (3.pl; 12pts)",
+            "Bohemian TD '26 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 5,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 48
+            },
+            {
+                "place": 3,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            },
+            {
+                "place": 5,
+                "comp": "Bohemian TD '26",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            64,
+            48,
+            12,
+            4
+        ]
+    },
+    "Robert Dopke": {
+        "total": 63,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "MAD '26 (20.pl; 63pts)"
+        ],
+        "details2": [
+            {
+                "place": 20,
+                "comp": "MAD '26",
+                "D": 120,
+                "C": 40,
+                "points": 63
+            }
+        ],
+        "tiebreak": [
+            63,
+            63,
+            0,
+            0
+        ]
+    },
+    "Maja Lalo\u0161": {
+        "total": 57,
+        "comps": 3,
+        "gender": "f",
+        "details": [
+            "GTD'25 (7.pl; 32pts)",
+            "Alsace '25 (2.pl; 13pts)",
+            "Turku '26 (3.pl; 12pts)"
+        ],
+        "details2": [
+            {
+                "place": 7,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 32
+            },
+            {
+                "place": 2,
+                "comp": "Alsace '25",
+                "D": 20,
+                "C": 3,
+                "points": 13
+            },
+            {
+                "place": 3,
+                "comp": "Turku '26",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            }
+        ],
+        "tiebreak": [
+            57,
+            32,
+            13,
+            12
+        ]
+    },
+    "Jana Geertz": {
+        "total": 56,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "GTD'25 (4.pl; 56pts)"
+        ],
+        "details2": [
+            {
+                "place": 4,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 56
+            }
+        ],
+        "tiebreak": [
+            56,
+            56,
+            0,
+            0
+        ]
+    },
+    "Lidia Barto": {
+        "total": 53,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "GTD'25 (6.pl; 40pts)",
+            "Liege '25 (2.pl; 13pts)"
+        ],
+        "details2": [
+            {
+                "place": 6,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 40
+            },
+            {
+                "place": 2,
+                "comp": "Liege '25",
+                "D": 20,
+                "C": 3,
+                "points": 13
+            }
+        ],
+        "tiebreak": [
+            53,
+            40,
+            13,
+            0
+        ]
+    },
+    "Christoph Verrieth": {
+        "total": 48,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "GTD'25 (7.pl; 32pts)",
+            "German Classic '26 (2.pl; 16pts)"
+        ],
+        "details2": [
+            {
+                "place": 7,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 32
+            },
+            {
+                "place": 2,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 16
+            }
+        ],
+        "tiebreak": [
+            48,
+            32,
+            16,
+            0
+        ]
+    },
+    "Eric Zuchold": {
+        "total": 44,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "FTD '26 (29.pl; 36pts)",
+            "DBVfF DM'25 (4.pl; 8pts)"
+        ],
+        "details2": [
+            {
+                "place": 29,
+                "comp": "FTD '26",
+                "D": 120,
+                "C": 40,
+                "points": 36
+            },
+            {
+                "place": 4,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 8
+            }
+        ],
+        "tiebreak": [
+            44,
+            36,
+            8,
+            0
+        ]
+    },
+    "Sophia Frey": {
+        "total": 40,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Low'25 (6.pl; 40pts)"
+        ],
+        "details2": [
+            {
+                "place": 6,
+                "comp": "Low'25",
+                "D": 80,
+                "C": 10,
+                "points": 40
+            }
+        ],
+        "tiebreak": [
+            40,
+            40,
+            0,
+            0
+        ]
+    },
+    "John Sch\u00e4ffer": {
+        "total": 40,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "GTD'25 (6.pl; 40pts)"
+        ],
+        "details2": [
+            {
+                "place": 6,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 40
+            }
+        ],
+        "tiebreak": [
+            40,
+            40,
+            0,
+            0
+        ]
+    },
+    "Jan Arnd Finkenberg": {
+        "total": 40,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "German Classic '26 (1.pl; 20pts)",
+            "Czechia TD '25 (1.pl; 20pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            },
+            {
+                "place": 1,
+                "comp": "Czechia TD '25",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            }
+        ],
+        "tiebreak": [
+            40,
+            20,
+            20,
+            0
+        ]
+    },
+    "Tobias Becker": {
+        "total": 38,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "GTD'25 (7.pl; 32pts)",
+            "Liege '25 (3.pl; 6pts)"
+        ],
+        "details2": [
+            {
+                "place": 7,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 32
+            },
+            {
+                "place": 3,
+                "comp": "Liege '25",
+                "D": 20,
+                "C": 3,
+                "points": 6
+            }
+        ],
+        "tiebreak": [
+            38,
+            32,
+            6,
+            0
+        ]
+    },
+    "Vroni Wirth": {
+        "total": 36,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "German Classic '26 (1.pl; 20pts)",
+            "DBVfF DM'25 (2.pl; 16pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            },
+            {
+                "place": 2,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 16
+            }
+        ],
+        "tiebreak": [
+            36,
+            20,
+            16,
+            0
+        ]
+    },
+    "Vivien-Marie Christian": {
+        "total": 33,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "WFP Finals '25 (26.pl; 33pts)"
+        ],
+        "details2": [
+            {
+                "place": 26,
+                "comp": "WFP Finals '25",
+                "D": 200,
+                "C": 30,
+                "points": 33
+            }
+        ],
+        "tiebreak": [
+            33,
+            33,
+            0,
+            0
+        ]
+    },
+    "Judith Melcher": {
+        "total": 32,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Low'25 (7.pl; 32pts)"
+        ],
+        "details2": [
+            {
+                "place": 7,
+                "comp": "Low'25",
+                "D": 80,
+                "C": 10,
+                "points": 32
+            }
+        ],
+        "tiebreak": [
+            32,
+            32,
+            0,
+            0
+        ]
+    },
+    "Benjamin Huxol": {
+        "total": 32,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "Liege '25 (1.pl; 20pts)",
+            "DBVfF DM'25 (3.pl; 12pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "Liege '25",
+                "D": 20,
+                "C": 3,
+                "points": 20
+            },
+            {
+                "place": 3,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            }
+        ],
+        "tiebreak": [
+            32,
+            20,
+            12,
+            0
+        ]
+    },
+    "Pia Zeller": {
+        "total": 28,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "Lion '26 (1.pl; 20pts)",
+            "DBVfF DM'25 (4.pl; 8pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            },
+            {
+                "place": 4,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 8
+            }
+        ],
+        "tiebreak": [
+            28,
+            20,
+            8,
+            0
+        ]
+    },
+    "Nick Mentzel": {
+        "total": 24,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "GTD'25 (8.pl; 24pts)"
+        ],
+        "details2": [
+            {
+                "place": 8,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 24
+            }
+        ],
+        "tiebreak": [
+            24,
+            24,
+            0,
+            0
+        ]
+    },
+    "Susan Treppner": {
+        "total": 22,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "GTD'25 (9.pl; 16pts)",
+            "Liege '25 (3.pl; 6pts)"
+        ],
+        "details2": [
+            {
+                "place": 9,
+                "comp": "GTD'25",
+                "D": 80,
+                "C": 10,
+                "points": 16
+            },
+            {
+                "place": 3,
+                "comp": "Liege '25",
+                "D": 20,
+                "C": 3,
+                "points": 6
+            }
+        ],
+        "tiebreak": [
+            22,
+            16,
+            6,
+            0
+        ]
+    },
+    "Siegfried Kramer": {
+        "total": 21,
+        "comps": 2,
+        "gender": "m",
+        "details": [
+            "Swiss TD (2.pl; 13pts)",
+            "German Classic '26 (4.pl; 8pts)"
+        ],
+        "details2": [
+            {
+                "place": 2,
+                "comp": "Swiss TD",
+                "D": 20,
+                "C": 3,
+                "points": 13
+            },
+            {
+                "place": 4,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 8
+            }
+        ],
+        "tiebreak": [
+            21,
+            13,
+            8,
+            0
+        ]
+    },
+    "Niklas Plankenhorn": {
+        "total": 20,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Lion '26 (1.pl; 20pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            }
+        ],
+        "tiebreak": [
+            20,
+            20,
+            0,
+            0
+        ]
+    },
+    "Charis Zach": {
+        "total": 16,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "German Classic '26 (2.pl; 16pts)"
+        ],
+        "details2": [
+            {
+                "place": 2,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 16
+            }
+        ],
+        "tiebreak": [
+            16,
+            16,
+            0,
+            0
+        ]
+    },
+    "Elena Pommer": {
+        "total": 16,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Lion '26 (2.pl; 16pts)"
+        ],
+        "details2": [
+            {
+                "place": 2,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 16
+            }
+        ],
+        "tiebreak": [
+            16,
+            16,
+            0,
+            0
+        ]
+    },
+    "Manuel Rath": {
+        "total": 16,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Lion '26 (2.pl; 16pts)"
+        ],
+        "details2": [
+            {
+                "place": 2,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 16
+            }
+        ],
+        "tiebreak": [
+            16,
+            16,
+            0,
+            0
+        ]
+    },
+    "Laura D\u00f6rr": {
+        "total": 12,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "German Classic '26 (3.pl; 12pts)"
+        ],
+        "details2": [
+            {
+                "place": 3,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            }
+        ],
+        "tiebreak": [
+            12,
+            12,
+            0,
+            0
+        ]
+    },
+    "Anna Gebel": {
+        "total": 12,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Lion '26 (3.pl; 12pts)"
+        ],
+        "details2": [
+            {
+                "place": 3,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            }
+        ],
+        "tiebreak": [
+            12,
+            12,
+            0,
+            0
+        ]
+    },
+    "Patrick Klinke": {
+        "total": 12,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Lion '26 (3.pl; 12pts)"
+        ],
+        "details2": [
+            {
+                "place": 3,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            }
+        ],
+        "tiebreak": [
+            12,
+            12,
+            0,
+            0
+        ]
+    },
+    "Kay Wirkner": {
+        "total": 12,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "DBVfF DM'25 (3.pl; 12pts)"
+        ],
+        "details2": [
+            {
+                "place": 3,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 12
+            }
+        ],
+        "tiebreak": [
+            12,
+            12,
+            0,
+            0
+        ]
+    },
+    "Anna Bittner": {
+        "total": 12,
+        "comps": 2,
+        "gender": "f",
+        "details": [
+            "Czechia TD '25 (4.pl; 8pts)",
+            "German Classic '26 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 4,
+                "comp": "Czechia TD '25",
+                "D": 20,
+                "C": 5,
+                "points": 8
+            },
+            {
+                "place": 5,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            12,
+            8,
+            4,
+            0
+        ]
+    },
+    "Katharina Blank": {
+        "total": 8,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "German Classic '26 (4.pl; 8pts)"
+        ],
+        "details2": [
+            {
+                "place": 4,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 8
+            }
+        ],
+        "tiebreak": [
+            8,
+            8,
+            0,
+            0
+        ]
+    },
+    "Laura Gl\u00e4sner": {
+        "total": 8,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Lion '26 (4.pl; 8pts)"
+        ],
+        "details2": [
+            {
+                "place": 4,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 8
+            }
+        ],
+        "tiebreak": [
+            8,
+            8,
+            0,
+            0
+        ]
+    },
+    "Marcel Koppers": {
+        "total": 8,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Lion '26 (4.pl; 8pts)"
+        ],
+        "details2": [
+            {
+                "place": 4,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 8
+            }
+        ],
+        "tiebreak": [
+            8,
+            8,
+            0,
+            0
+        ]
+    },
+    "Jonathan Sindel": {
+        "total": 4,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "German Classic '26 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 5,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            4,
+            4,
+            0,
+            0
+        ]
+    },
+    "Christin Chollee": {
+        "total": 4,
+        "comps": 1,
+        "gender": "f",
+        "details": [
+            "Lion '26 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 5,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            4,
+            4,
+            0,
+            0
+        ]
+    },
+    "Felix Paeper": {
+        "total": 4,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Lion '26 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 5,
+                "comp": "Lion '26",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            4,
+            4,
+            0,
+            0
+        ]
+    },
+    "Leon Wagenknecht": {
+        "total": 4,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "Turku '26 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 5,
+                "comp": "Turku '26",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            4,
+            4,
+            0,
+            0
+        ]
+    },
+    "Christian H\u00f6ll": {
+        "total": 4,
+        "comps": 1,
+        "gender": "m",
+        "details": [
+            "DBVfF DM'25 (5.pl; 4pts)"
+        ],
+        "details2": [
+            {
+                "place": 5,
+                "comp": "DBVfF DM'25",
+                "D": 20,
+                "C": 5,
+                "points": 4
+            }
+        ],
+        "tiebreak": [
+            4,
+            4,
+            0,
+            0
+        ]
+    }
+}
