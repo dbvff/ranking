@@ -79,7 +79,7 @@ data = data + [
 
 # Indy: iF3 Euros, final day,
 #meta = {"comp": "iF3 Euros '25", "D": 100-50, "C": 10}
-# no athletes send by the DBVfF
+# no athletes send by the DBVfF / zeitgleich mit DM 
 
 # German Classic
 # https://circle21.events/german-classics-indy-finals-2026?tab=leaderboard
@@ -127,21 +127,22 @@ data = data + [
     {"name": "Felix Paeper", "gender": "m", "place": 5, **meta},
 ]
 
-# Varna Throwdown 2025
+# Varna Throwdown 2026
 # https://circle21.events/varna-throwdown-2026-finals
 # meta = {"comp": "Varna '25", "D": 20, "C": 5}
 
 
+# Alsace Throwdown 2026 - 18 19 20, September 2026
+# https://competitioncorner.net/ff/20359/results
 # Alsace Throwdown 2025
 # https://competitioncorner.net/ff/16498/results
 meta = {"comp": "Alsace '25", "D": 20, "C": 3}
 data = data + [
     {"name": "Maja Laloš", "gender": "f", "place": 2, **meta},
 ]
-# https://competitioncorner.net/ff/20359/results
 
 
-# Turku Tuomiopäivä 2025
+# Turku Tuomiopäivä 2026
 # https://competitioncorner.net/ff/20043/results
 meta = {"comp": "Turku '26", "D": 20, "C": 5}
 data = data + [
@@ -149,8 +150,8 @@ data = data + [
     {"name": "Maja Laloš", "gender": "f", "place": 3, **meta},
 ]
 
-# UBL Italian Championship 2025
-# https://app.judgerules.it/#/events/760/leaderboard
+# UBL Italian Championship 2026
+# https://italianchampionship.it/compete/leaderboard
 # meta = {"comp": "UBL '25", "D": 20, "C": 4}
 
 
@@ -158,25 +159,26 @@ data = data + [
 # https://competitioncorner.net/events/15263/details
 meta = {"comp": "DBVfF DM'25", "D": 20, "C": 5}
 data = data + [
-    {"name": "Benjamin Huxol", "gender": "m", "place": 1, **meta},
-    {"name": "Eric Zuchold", "gender": "m", "place": 2, **meta},
-    {"name": "Karl Feldmer", "gender": "m", "place": 3, **meta},
-    {"name": "Lenn Postel", "gender": "m", "place": 4, **meta},
-    {"name": "Max Hinkofer", "gender": "m", "place": 5, **meta},
+    {"name": "Lenn Postel", "gender": "m", "place": 1, **meta},
+    {"name": "Karl Feldmer", "gender": "m", "place": 2, **meta},
+    {"name": "Benjamin Huxol", "gender": "m", "place": 3, **meta},
+    {"name": "Eric Zuchold", "gender": "m", "place": 4, **meta},
+    {"name": "Christian Höll", "gender": "m", "place": 5, **meta},
 
     {"name": "Julia Jakobsen", "gender": "f", "place": 1, **meta},
-    {"name": "Vivien-Marie Christian", "gender": "f", "place": 2, **meta},
-    {"name": "Jana Geertz", "gender": "f", "place": 3, **meta},
-    {"name": "Franziska Bröhl", "gender": "f", "place": 4, **meta},
-    {"name": "Lidia Barto", "gender": "f", "place": 5, **meta},
+    {"name": "Vroni Wirth", "gender": "f", "place": 2, **meta},
+    {"name": "Kay Wirkner", "gender": "f", "place": 3, **meta},
+    {"name": "Pia Zeller", "gender": "f", "place": 4, **meta},
+    {"name": "Sarah Kay", "gender": "f", "place": 5, **meta},
 ]
 
 # Strength in Depth 2025
 # https://circle21.events/event?competitionId=fa283049-d38a-4a0d-837f-f8420f414270&tab=leaderboard
-meta = {"comp": "SiD '25", "D": 20, "C": 4}
-data = data + [
-    {"name": "Anja Keller", "gender": "f", "place": 3, **meta},
-]
+# meta = {"comp": "SiD '25", "D": 20, "C": 4}
+# data = data + [
+#     {"name": "Anja Keller", "gender": "f", "place": 3, **meta},
+# ]
+# seems to be cancelled in 2026
 
 
 # CISM Regional Military Championships
@@ -270,7 +272,7 @@ data = data + [
 
 
 # Rogue Invitational
-meta = {"comp": "Rogue '24", "D": 150, "C": 15}
+# meta = {"comp": "Rogue '24", "D": 150, "C": 15}
 # no participants
 
 
@@ -280,6 +282,7 @@ meta = {"comp": "Rogue '24", "D": 150, "C": 15}
 #meta = {"comp": "Amsterdam", "D": 20, "C": 3}
 #data = data + [
 #]
+# excluded because bad information availability
 
 
 # Austrian Throwdown,
