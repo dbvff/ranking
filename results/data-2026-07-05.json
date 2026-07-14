@@ -133,21 +133,21 @@
         ]
     },
     "Jan Arnd Finkenberg": {
-        "total": 160,
+        "total": 154,
         "comps": 3,
         "gender": "m",
         "details": [
-            "REBEL '26 (1.pl; 120pts)",
+            "REBEL '26 (3.pl; 114pts)",
             "German Classic '26 (1.pl; 20pts)",
             "Czechia TD '25 (1.pl; 20pts)"
         ],
         "details2": [
             {
-                "place": 1,
+                "place": 3,
                 "comp": "REBEL '26",
                 "D": 120,
                 "C": 40,
-                "points": 120
+                "points": 114
             },
             {
                 "place": 1,
@@ -165,8 +165,8 @@
             }
         ],
         "tiebreak": [
-            160,
-            120,
+            154,
+            114,
             20,
             20
         ]

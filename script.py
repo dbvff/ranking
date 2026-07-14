@@ -70,7 +70,7 @@ data = data + [
 # REBEL Renegage Games - South Africa
 meta = {"comp": "REBEL '26", "D": 100 + 20, "C": 40}
 data = data + [
-    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
+    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 3, **meta},
 ]
 
 # WFP Tour Event 1
