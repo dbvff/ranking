@@ -67,6 +67,12 @@ data = data + [
     {"name": "Julia Jakobsen", "gender": "f", "place": 11, **meta},
 ]
 
+# REBEL Renegage Games - South Africa
+meta = {"comp": "REBEL '26", "D": 100 + 20, "C": 40}
+data = data + [
+    {"name": "Jan Arnd Finkenberg", "gender": "m", "place": 1, **meta},
+]
+
 # WFP Tour Event 1
 # https://competitioncorner.net/ff/19995/results
 meta = {"comp": "WFP 1 London '26", "D": 150, "C": 38}

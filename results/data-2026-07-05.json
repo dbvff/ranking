@@ -132,6 +132,45 @@
             20
         ]
     },
+    "Jan Arnd Finkenberg": {
+        "total": 160,
+        "comps": 3,
+        "gender": "m",
+        "details": [
+            "REBEL '26 (1.pl; 120pts)",
+            "German Classic '26 (1.pl; 20pts)",
+            "Czechia TD '25 (1.pl; 20pts)"
+        ],
+        "details2": [
+            {
+                "place": 1,
+                "comp": "REBEL '26",
+                "D": 120,
+                "C": 40,
+                "points": 120
+            },
+            {
+                "place": 1,
+                "comp": "German Classic '26",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            },
+            {
+                "place": 1,
+                "comp": "Czechia TD '25",
+                "D": 20,
+                "C": 5,
+                "points": 20
+            }
+        ],
+        "tiebreak": [
+            160,
+            120,
+            20,
+            20
+        ]
+    },
     "Anja Keller": {
         "total": 138,
         "comps": 3,
@@ -540,37 +579,6 @@
             40,
             40,
             0,
-            0
-        ]
-    },
-    "Jan Arnd Finkenberg": {
-        "total": 40,
-        "comps": 2,
-        "gender": "m",
-        "details": [
-            "German Classic '26 (1.pl; 20pts)",
-            "Czechia TD '25 (1.pl; 20pts)"
-        ],
-        "details2": [
-            {
-                "place": 1,
-                "comp": "German Classic '26",
-                "D": 20,
-                "C": 5,
-                "points": 20
-            },
-            {
-                "place": 1,
-                "comp": "Czechia TD '25",
-                "D": 20,
-                "C": 5,
-                "points": 20
-            }
-        ],
-        "tiebreak": [
-            40,
-            20,
-            20,
             0
         ]
     },
